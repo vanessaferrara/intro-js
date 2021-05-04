@@ -2,6 +2,9 @@
 // Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
 ///////////////////////////////////////////////////////////////////////////////
 
+// Note: this code is relevant for the Atom editor configured according to
+// course's slides.
+
 // All the text that follows a double "slash", that is //, is a comment.
 // Whatever follows the double slash on the same line is ignored by
 // the computer, it is just for you to read.

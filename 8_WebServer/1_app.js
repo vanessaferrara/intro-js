@@ -2,12 +2,6 @@
 // Programming Fundamentals in JavaScript! //
 /////////////////////////////////////////////
 
-// TODO: move somewhere else.
-// npm install express-generator -g
-// Might require admin rights.
-// Follow instructions on screen to launch the web server.
-
-
 // Module: Express Web Server.
 //////////////////////////////
 

@@ -8,6 +8,9 @@
 // but my students are really nice, so I felt ashemed of lying and I
 // have added the solutions below.
 
+// Note: this code is relevant for the Atom editor configured according to
+// course's slides.
+
 // EXERCISE 1 Indentation.
 //////////////////////////
 
