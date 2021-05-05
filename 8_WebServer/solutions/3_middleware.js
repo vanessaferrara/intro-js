@@ -94,6 +94,11 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 // added matters.
 
 
+app.use('/secret', (req, res, next) => {
+    console.log('You will be checked in the next exercise');
+    next();
+});
+
 
 // Check if the request includes the secret key "123" as query string,
 // and block unauthorized connections. That is, a connection to the secret/ 
@@ -109,5 +114,10 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 // that the connection is not authorized, e.g. with res.send, and do not 
 // invoke next.
 
+
+app.use('/secret', (req, res, next) => {
+    if (req.query.key === "123") next();
+    else res.send('You are not authorized.');
+});
 
 

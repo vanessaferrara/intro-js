@@ -1,15 +1,10 @@
-/////////////////////////////////////////////
-// Programming Fundamentals in JavaScript! //
-/////////////////////////////////////////////
+/////////////
+// App Dev //
+/////////////
 
-// TODO: move somewhere else.
-// npm install express-generator -g
-// Might require admin rights.
-// Follow instructions on screen to launch the web server.
+// Module: Web Server.
+//////////////////////
 
-
-// Module: Express Web Server.
-//////////////////////////////
 
 // Express is a fast web server for NodeJS.
 // https://expressjs.com/
@@ -70,12 +65,16 @@ app.get('/secret', (req, res) => {
 // Exercise 2: Serve public files.
 //////////////////////////////////
 
+// a. Add a public folder.
+
 // As I told you, Express is quite lazy, it won't do anything by default.
-// Let's now add a public directory from which Express can serve static assets.
+// Let's now create a public directory from which Express can serve
+// static assets.
 
 // The command .use() tells express to use a "middleware" function, that is
 // a function that will be executed before executing the callback for a route.
 // Here we do not specify a route, meaning that it applies to all routes.
+
 app.use(express.static('public'));
 
 // Make sure there is something to serve in public. 
@@ -88,8 +87,8 @@ app.use(express.static('public'));
 
 // Rename the file index.html, so that it will be served automatically.
 
-// Exercise 3: Create an home page.
-///////////////////////////////////
+
+// b. Create an home page.
 
 // Now you would like to have an home page, a file that is automatically
 // served without the need to specify it. To do so, you need to rename

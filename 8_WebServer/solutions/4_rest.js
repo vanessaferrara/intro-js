@@ -109,6 +109,10 @@ app.get("/activities/", async (req, res) => {
 // Hint: generate a random integer between 0 and 11 (tot num of activities):
 // https://www.w3schools.com/JS/js_random.asp  
 
+app.get("/activities/:id", async (req, res) => {
+	const activities = await getActivities();
+	res.send(activities[req.params.id]);
+});
 
 
 // d. Optional. 
@@ -129,7 +133,23 @@ app.get("/activities/", async (req, res) => {
 
 // Hint3: Do not forget to call JSON.stringify on your payload.
 
+// We could use a middleware, but it would apply also to GET requests. So
+// we create this "poor-man" middleware and use it as a function inside
+// the route's callback.
+let checkAuth = (req, res) => {
+  if (req.body.key !== "123") {
+      res.status(500);
+      res.send("You are not authorized");
+      return false;  
+  };
+  return true;
+}
 
+app.post("/activities/", async (req, res) => {
+  if (!checkAuth(req, res)) return;
+	const activities = await getActivities();
+	res.send(activities);
+});
 
 // Get Activities Functions.
 ////////////////////////////
