@@ -22,6 +22,7 @@
                 margin: 0 auto;
                 text-align: center;
             }
+            
         </style>
         <link rel="stylesheet" href="./css/style_inputs.css" />
     </head>
@@ -34,13 +35,13 @@
                   
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                        <a id="power-yes" class="nav-link" href="#">Yes</a>
+                        <a id="power-yes" class="nav-link h3" href="#">Yes</a>
                         </li>
                         <li class="nav-item">
-                        <a id="power-maybe" class="nav-link" href="#">Maybe</a>
+                        <a id="power-maybe" class="nav-link h3" href="#">Maybe</a>
                         </li>
                         <li class="nav-item">
-                        <a id="power-no" class="nav-link" href="#">No</a>
+                        <a id="power-no" class="nav-link h3" href="#">No</a>
                         </li>
                     </ul>
                     </p>
@@ -124,11 +125,11 @@
                 // and its navigation link. 
                 if (currentTab) {
                     let linkId = currentTab.id.replace("tab", "power");
-                    document.getElementById(linkId).className = 'nav-link';
+                    document.getElementById(linkId).className = 'nav-link h3';
                     currentTab.className = 'tab';
                 }
                 let linkId = tabId.replace("tab", "power");
-                document.getElementById(linkId).className = 'nav-link active';
+                document.getElementById(linkId).className = 'nav-link h3 active';
                 currentTab = document.getElementById(tabId);
                 currentTab.className = 'tab tab-active';
             }
