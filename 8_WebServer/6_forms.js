@@ -67,74 +67,12 @@ app.get('/secret', (req, res) => {
 // Start the server on port 3000.
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 
-// Exercise 4: REST.
-////////////////////
-
-// a. Create a new route "/activities" that uses the function
-// getActivities() defined below. This function asynchronously returns
-// all the activities used in the Bootstrap chapter. 
 
 // Solution.
 app.get("/activities/", async (req, res) => {
 	const activities = await getActivities();
 	res.send(activities)
 });
-
-// b. Copy index.html and rename to fetch.html. Update it to to fetch
-// the activities using the REST API that you just created here.
-// Hint: use the fetch command.
-
-
-// c. Express can assign route segments to variables. This is
-// useful to create more readable and compact urls, avoiding the use of
-// query string. For instance, these two routes are equivalent:
-
-// /activities/?id=1
-// /activities/1
-
-// To parse "1" as an id in the second route in the example above, 
-// create the route using the colon operator followed by a variable name:
-
-// "/activities/:id" 
-
-// The id variable will theh be available in the res object under
-
-// res.params.id
-
-// Here is your task. 
-// 
-// - Create a route that takes one id as parameter, and returns just one
-// activity, the id of which is its position in the array of activities
-// as returned by getActivities().
-// 
-// - Copy file fetch.html and rename to fetch_one.html and fetch
-// a random activity.
-
-// Hint: generate a random integer between 0 and 11 (tot num of activities):
-// https://www.w3schools.com/JS/js_random.asp  
-
-app.get("/activities/:id", async (req, res) => {
-	const activities = await getActivities();
-	res.send(activities[req.params.id]);
-});
-
-// d. Optional. 
-// You want to protect your precious list of activities with a super secret
-// access key (equal to "123").
-//
-// You know by now that GET requests are not well-suited for sensitive data
-// and you decided to reimplement a., b. using POST routes. 
-//
-// Finally, copy file fetch.html and rename to fetch_post.html and fetch
-// the activities with a POST request instead of a GET request. 
-
-// Hint1: On Express, you can simply specify a route as app.post(...). 
-// Hint2: On the browser, the fetch implements GET requests by default. You
-// can modify this behavior with additional configuration object:
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-
-// Hint3: Do not forget to call JSON.stringify on your payload.
 
 let checkAuth = (req, res) => {
   if (req.body.key !== "123") {
@@ -151,10 +89,42 @@ app.post("/activities/", async (req, res) => {
 	res.send(activities);
 });
 
+
+// Exercise 6: Process Forms.
+////////////////////
+
+// a. Modify public/8_bootstrap_forms.html to send data to the route
+// "/survey". Ah, I forgot: create that route.
+// What happens to client that submitted
+
 app.post("/survey/", (req, res) => {
-  
-	
+  console.log(req.body);
+
+  db.insert(req.body);
+
+  res.redirect("/");
+  // res.end(); // And handle page reload on client.
 });
+
+// b. Store the data in the lightweight in-memory NDDB database. 
+// Ah, I forgot, you need to install it.
+
+const NDDB = require('NDDB');
+let db = new NDDB();
+
+// c. Save the data to a CSV/JSON file.
+
+const path = require('path');
+let fileName = path.resolve('data', 'out.csv');
+db.save(fileName, { 
+  // Specify a custom header.
+  header: [ 'email', 'address' ],
+
+  // Incrementally save to the same csv file all new entries.
+  keepUpdated: true
+
+});
+
 
 
 // Get Activities Functions.
