@@ -110,8 +110,31 @@ $(document).ready(function() {
     //   rgb background definition.
     // - Add some delay to see the result (hint: setTimeout()).
 
-    // Solution.
-    // doSolutionOptional();
+     // Let's work with arrow functions, so that we don't forget about them.
+     let doGradient = (red, green) => {
+
+        console.log('Making a nice parametric gradient...');
+
+        const baseBlue = 50;
+        $('.myClass-0-3').each(function(counter) {
+
+            // Counter is a zero-based index of the elements in 
+            // the each() loop.
+            counter++;
+
+            // Let's differentiate the divs based on the index number.
+            // Use the index to differentiate their rgb color code.
+            // Ref: https://www.w3schools.com/Css/css_colors_rgb.asp
+            let blue = baseBlue * counter;
+            let someColor = `rgb(${red}, ${green}, ${blue})`;
+            
+            // Let's set the color as the background of the div with .css().
+            $(this).css({'background-color' : someColor});
+        });
+    };
+
+    // Added a global reference.
+    window.doGradient = doGradient;
 
 
 });

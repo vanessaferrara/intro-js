@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function doSolution() {
 
     $(".myClass-0-1").hover(
         // first function activates when you hover over the div
@@ -18,5 +18,4 @@ $(document).ready(function() {
           });
         }
       );
-
-});
+}
