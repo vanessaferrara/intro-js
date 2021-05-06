@@ -48,6 +48,9 @@
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">    
     </script>
 
+    <!-- Solution. -->
+    <script src="js/solutions/ex1B.js"></script>
+    
     <script>
 
     // jQuery exposes the $ operator to access all jQuery methods.
@@ -58,8 +61,10 @@
     // fully loaded once we start interacting with it. 
     $(document).ready( function() {
         
+        // Uncomment for step-by-step execution.
+        // debugger;
         
-        // From Ex1.
+        // From Ex1A.
         // We can chain methods in jQuery.
         $('.myClass-0-1').html('jQuery is <em>easy</em>.<br/><br/>');
         // The text is there but small. Let's make it bigger.
@@ -107,19 +112,10 @@
 
 
         // Solution.
-        // Add some fun attributes to your text.
-        $('.myClass-0-3').css({
-            'transition': '1s',
-            'background-color': 'black',
-            'color': 'white',
-            'font-size': '30px',
-            'margin-bottom': '5px',
-            'padding': '10px'
-        });
+        // doSolution();
 
     });
 
     </script>
-
 </body>
 </html>

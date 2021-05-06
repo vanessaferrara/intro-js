@@ -82,72 +82,9 @@ $(document).ready(function() {
     });
 
     // Solution.
-    const baseBlue = 50;
-    $('.myClass-0-3').each(function(counter) {
+    // doSolution();
 
-        // Counter is a zero-based index of the elements in the each() loop.
-        counter++;
-
-        let myString = 'This is div number ' + counter;
-        $(this).html(myString);
-
-        // Let's differentiate the divs based on the index number.
-        // Use the index to differentiate their rgb color code.
-        // Ref: https://www.w3schools.com/Css/css_colors_rgb.asp
-        let blue = baseBlue * counter;
-        let someColor = 'rgb(100, 200, ' + blue + ')';
-        
-        // Let's set the color as the background of the div with .css().
-        $(this).css({'background-color' : someColor});
-    });
-
-    // b. Let's parametrize the gradient creation.
-    ///////////////////////////////////////////////
-
-    // - Create a new function that takes two parameters: red and green.
-    // - Modify the function in a. to set those two parameters in the 
-    //   rgb background definition.
-    // - Add some delay to see the result (hint: setTimeout()).
-
-    // Solution.
-    // Let's work with arrow functions, so that we don't forget about them.
-    let doGradient = (red, green) => {
-
-        console.log('Making a nice parametric gradient...');
-
-        const baseBlue = 50;
-        $('.myClass-0-3').each(function(counter) {
-
-            // Counter is a zero-based index of the elements in 
-            // the each() loop.
-            counter++;
-
-            let myString = 'This is div number ' + counter;
-            $(this).html(myString);
-
-            // Let's differentiate the divs based on the index number.
-            // Use the index to differentiate their rgb color code.
-            // Ref: https://www.w3schools.com/Css/css_colors_rgb.asp
-            let blue = baseBlue * counter;
-            let someColor = `rgb(${red}, ${green}, ${blue})`;
-            
-            // Let's set the color as the background of the div with .css().
-            $(this).css({'background-color' : someColor});
-        });
-    };
-
-    // Added a global reference.
-    window.doGradient = doGradient;
-
-    // to see the effect of our function let's wait a bit for the initial
-    // action to settle then call the function with any value we want
-
-    // setTimeout(()=> {
-    //     doGradient(Math.floor(Math.random()*255), 
-    //                Math.floor(Math.random()*255));
-    // }, 2000);
-
-    // c. Fun facts.
+    // b. Fun facts.
 
     // Let's add some fun facts.
     // Ref: https://www.rd.com/list/interesting-facts/.
@@ -164,5 +101,17 @@ $(document).ready(function() {
         // Not using jQuery in here.
         this.innerText = funFacts[counter];
     });
+
+    // c. Optional. Let's parametrize the gradient creation.
+    ///////////////////////////////////////////////
+
+    // - Create a new function that takes two parameters: red and green.
+    // - Modify the function in a. to set those two parameters in the 
+    //   rgb background definition.
+    // - Add some delay to see the result (hint: setTimeout()).
+
+    // Solution.
+    // doSolutionOptional();
+
 
 });
