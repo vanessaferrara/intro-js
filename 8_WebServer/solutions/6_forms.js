@@ -99,8 +99,11 @@ app.post("/activities/", async (req, res) => {
 
 app.post("/survey/", (req, res) => {
   console.log(req.body);
+
+  db.insert(req.body);
+
   res.redirect("/");
-  // res.end(); // To handle page reload on client.
+  // res.end(); // And handle page reload on client.
 });
 
 // b. Store the data in the lightweight in-memory NDDB database. 
@@ -110,16 +113,6 @@ app.post("/survey/", (req, res) => {
 
 const NDDB = require('NDDB');
 let db = new NDDB();
-
-// Todo: comment the /survey/ route above when testing.
-app.post("/survey/", (req, res) => {
-  console.log(req.body);
-
-  db.insert(req.body);
-
-  res.redirect("/");
-  // res.end(); // To handle page reload on client.
-});
 
 // c. Save the data to a CSV file in the data/ folder.
 // Ah, I forgot, you need to create the data/ folder.

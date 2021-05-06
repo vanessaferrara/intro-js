@@ -60,3 +60,7 @@ app.get('/secret', (req, res) => {
 // 2. What do you see at route: http://localhost:3000/secret/ ?
 // 3. What do you see at route: http://localhost:3000/SECRET/ ?
 // 4. What do you see at route: http://localhost:3000/notexisting/ ?
+
+// And since we are here, why don't we learn how to debug a server-side app?
+
+// Ref: https://nodejs.org/en/docs/guides/debugging-getting-started/

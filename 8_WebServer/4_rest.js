@@ -136,26 +136,6 @@ app.get("/activities/:id", async (req, res) => {
 
 // Hint3: Do not forget to call JSON.stringify on your payload.
 
-let checkAuth = (req, res) => {
-  if (req.body.key !== "123") {
-      res.status(500);
-      res.send("You are not authorized");
-      return false;  
-  };
-  return true;
-}
-
-app.post("/activities/", async (req, res) => {
-  if (!checkAuth(req, res)) return;
-	const activities = await getActivities();
-	res.send(activities);
-});
-
-app.post("/survey/", (req, res) => {
-  
-	
-});
-
 
 // Get Activities Functions.
 ////////////////////////////
