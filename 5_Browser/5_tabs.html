@@ -35,22 +35,13 @@
                 This is a s****y day!
             </div>
         </div>
+        <!-- Contains function to make the header from previous exercise. -->
+        <script src="./js/links.js"></script>
 
         <script>
 
             // Uncomment for step-by-step execution.
             // debugger;
-
-            // Header.
-            function makeHeader(div) {
-                div.style.background = '#CCC';
-                div.style.border = '1px solid black';
-                // CSS property box-shadow needs to be quoted in JS to 
-                // avoid confusion with the minus sign.
-                div.style['box-shadow'] = '2px 2px';
-            }
-            let divAbove = document.getElementById("above");
-            makeHeader(divAbove);
 
             // Tabs.
             let currentTab = null;
@@ -62,12 +53,16 @@
 
             // Option 2 to add an event listener to clicks.
             document.getElementById('power-maybe').onclick = function() {
-                displayTab("tab-maybe");
+                // Exercise: display the right tab when this element is clicked.
+                // Hint: use function displayTab.
+                // Note: no solution provided here, you can make it!
             };
 
             // Option 3 to add an event listener to clicks.
             document.getElementById('power-no').addEventListener('click', function() {
-                displayTab("tab-no");
+                // Exercise: display the right tab when this element is clicked.
+                // Hint: use function displayTab.
+                // Note: no solution provided here, you can make it!
             });
         </script>
     </body>
