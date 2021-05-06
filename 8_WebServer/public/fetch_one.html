@@ -50,10 +50,10 @@
                       </li>
                       <li class="nav-item">
                       <a id="power-maybe" data-toggle="tab" 
-                      class="nav-link h3" href="#tab-maybe">Maybe</a>
+                      class="nav-link h3" href="#tab-maybe"> Maybe</a>
                       </li>
                       <li class="nav-item">
-                      <a id="power-no" data-toggle="tab"
+                      <a id="power-no"  data-toggle="tab"
                       class="nav-link h3" href="#tab-no">No</a>
                       </li>
                   </ul>
@@ -118,7 +118,7 @@
                     I am loading a list of things to do that should make you feel better.
 
                     <div class="progress" style="width: 80%; margin: 0 auto;">
-                      <div id="progress-bar" 
+                        <div id="progress-bar" 
                         class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                       </div>
                   </div>
@@ -161,7 +161,32 @@
           $("div.card-footer").unbind("mouseenter mouseleave");
         });
 
-                   // Do something about it.
+        async function fetchActivitiesFromServer() {
+              return await fetch('http://localhost:3000/activities/')
+                              .then(res => {
+                                if (res.status >= 400) {
+                                  throw new Error("Bad response from server");
+                                }
+                                return res.json();
+                              });
+        }
+
+        async function fetchOneActivityFromServer() {
+              // Get a random activity id.
+              let idx = Math.floor(Math.random()*12);
+              let a = await fetch('http://localhost:3000/activities/' + idx)
+                              .then(res => {
+                                if (res.status >= 400) {
+                                  throw new Error("Bad response from server");
+                                }
+                                return res.json();
+                              });
+              // An array is expected to create the cards.
+              return [a];
+        }
+
+
+        // Do something about it.
          function doSomethingAboutIt() {
               
               // In principle, we could add async to this callback,
@@ -181,7 +206,7 @@
                 // Self-executing anonymous async function.
                 (async () => {
     
-                  let activities = await fetchActivities();
+                  let activities = await fetchOneActivityFromServer();
     
                   $('#row-progress').fadeOut("fast");
     

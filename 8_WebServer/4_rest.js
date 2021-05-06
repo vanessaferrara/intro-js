@@ -70,19 +70,20 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 // Exercise 4: REST.
 ////////////////////
 
-// a. Create a new route "/activities" that returns all the activities used
-// in app developed in the Bootstrap chapter. 
-// Simulate a delay in accessing a database creating an async function and 
-// with a timeout. 
+// a. Create a new route "/activities" that uses the function
+// getActivities() defined below. This function asynchronously returns
+// all the activities used in the Bootstrap chapter. 
 
+// Solution.
 app.get("/activities/", async (req, res) => {
 	const activities = await getActivities();
 	res.send(activities)
 });
 
 // b. Copy index.html and rename to fetch.html. Update it to to fetch
-// the activities with a using the REST API that you created here.
+// the activities using the REST API that you just created here.
 // Hint: use the fetch command.
+
 
 // c. Express can assign route segments to variables. This is
 // useful to create more readable and compact urls, avoiding the use of
@@ -100,16 +101,22 @@ app.get("/activities/", async (req, res) => {
 
 // res.params.id
 
-// Create a route that returns just one activity, the id of which is its
-// position in the array of activities as returned by getActivities().
-
-// Finally, copy file fetch.html and rename to fetch_one.html and fetch
+// Here is your task. 
+// 
+// - Create a route that takes one id as parameter, and returns just one
+// activity, the id of which is its position in the array of activities
+// as returned by getActivities().
+// 
+// - Copy file fetch.html and rename to fetch_one.html and fetch
 // a random activity.
 
 // Hint: generate a random integer between 0 and 11 (tot num of activities):
 // https://www.w3schools.com/JS/js_random.asp  
 
-
+app.get("/activities/:id", async (req, res) => {
+	const activities = await getActivities();
+	res.send(activities[req.params.id]);
+});
 
 // d. Optional. 
 // You want to protect your precious list of activities with a super secret
@@ -128,6 +135,21 @@ app.get("/activities/", async (req, res) => {
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 // Hint3: Do not forget to call JSON.stringify on your payload.
+
+let checkAuth = (req, res) => {
+  if (req.body.key !== "123") {
+      res.status(500);
+      res.send("You are not authorized");
+      return false;  
+  };
+  return true;
+}
+
+app.post("/activities/", async (req, res) => {
+  if (!checkAuth(req, res)) return;
+	const activities = await getActivities();
+	res.send(activities);
+});
 
 
 

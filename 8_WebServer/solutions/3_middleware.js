@@ -93,7 +93,7 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 // Hint: Remember that the order in which middlewares and routes
 // added matters.
 
-
+// TODO: must be placed right above of the app.get('/secret' ...).
 app.use('/secret', (req, res, next) => {
     console.log('You will be checked in the next exercise');
     next();
@@ -115,6 +115,7 @@ app.use('/secret', (req, res, next) => {
 // invoke next.
 
 
+// TODO: must be placed right above of the app.get('/secret' ...).
 app.use('/secret', (req, res, next) => {
     if (req.query.key === "123") next();
     else res.send('You are not authorized.');

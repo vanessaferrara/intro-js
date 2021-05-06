@@ -105,9 +105,9 @@ app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
 // however the req.query object will contain the parsed query strings (e.g., 
 // req.query.key).
 
-// Hint2: How to block the connection? Simply don't send a message saying
+// Hint2: How to block the connection? Simply send a message saying
 // that the connection is not authorized, e.g. with res.send, and do not 
-// invoke next.
+// invoke next().
 
 
 

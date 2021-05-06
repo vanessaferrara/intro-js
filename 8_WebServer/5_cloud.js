@@ -8,7 +8,7 @@
 // Exercise 5: Publish your web server on the cloud.
 ////////////////////////////////////////////////////
 
-// You have created a beatiful web server!
+// You have created a beautiful web server!
 
 // a. It is time to share it with the world. On the cloud.
 

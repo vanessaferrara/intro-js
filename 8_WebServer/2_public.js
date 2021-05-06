@@ -68,8 +68,8 @@ app.get('/secret', (req, res) => {
 // a. Add a public folder.
 
 // As I told you, Express is quite lazy, it won't do anything by default.
-// Let's now create a public directory from which Express can serve
-// static assets.
+// Let's now create a public directory in this same folder, from which
+// Express will serve static assets.
 
 // The command .use() tells express to use a "middleware" function, that is
 // a function that will be executed before executing the callback for a route.
@@ -78,21 +78,19 @@ app.get('/secret', (req, res) => {
 app.use(express.static('public'));
 
 // Make sure there is something to serve in public. 
-// Copy over an HTML file from the previous chapter on Bootstrap 
-// (e.g., 6_bootstrap_progress.html) and folders css/ and js/. 
+// Copy over the HTML file 7_bootstrap_modal.html
+// from the previous chapter on Bootstrap and the folders css/ and js/. 
 
 // Try it out!
 
-// http://localhost:3000/notexisting/6_bootstrap_progress.html
-
-// Rename the file index.html, so that it will be served automatically.
+// http://localhost:3000/7_bootstrap_modal.html
 
 
 // b. Create an home page.
 
-// Now you would like to have an home page, a file that is automatically
-// served without the need to specify it. To do so, you need to rename
-// the file from the previous exercise to index.html
+// Now you would like to have a home page, a file that is automatically
+// served without the need to specify the path to it.
+// To do so, you need to rename 7_bootstrap_modal.html to index.html.
 
 // Try it out!
 
