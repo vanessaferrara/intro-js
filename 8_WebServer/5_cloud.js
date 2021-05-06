@@ -24,7 +24,7 @@
 
 // 3. Copy file 4_rest.js and rename to app.js (you can pick any name).
 
-// 4. On Heroku, you can no longer set the port for your serer, 
+// 4. On Heroku, you can no longer set the port for your server, 
 // Heroku will decide it for you at runtime. So, you need to modify 
 // the PORT declaration with this line:
 
@@ -60,6 +60,31 @@
 
 // Locally: copy the file fetch_post.html to fetch_post_remote.html,
 // and fetch the list of activities from the remote server on Heroku.
+
+// You will be soon struck by a CORS error. What are CORS?
+// Cross-Origin Resource Sharing (CORS) is an HTTP header that allows
+// a server to communicate with clients from other origins. 
+
+// Ref:
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+
+// By default CORS are disabled. How to enable them? Luckily, there is now
+// the CORS module.
+
+// Ref: https://www.npmjs.com/package/cors
+
+// However it is not enough... You also need to accept incoming requests
+// containing JSON in their body. The lines below will save you:
+
+// Module cors need to be installed.
+const cors = require('cors');
+app.use(cors());
+
+ app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
+    next();
+});
+
 
 
 // c. Optional. Do you want to be really cool? Create a new folder, only with

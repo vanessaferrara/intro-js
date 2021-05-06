@@ -157,7 +157,8 @@
           window.location.href = "8_bootstrap_forms.html";
         });
 
-        $('#no-do-survey').click(() => {
+        // If the modal is hidden unbind the jQuery hover on footer.
+        $('#surveyModal').on('hidden.bs.modal', function(event) {
           $("div.card-footer").unbind("mouseenter mouseleave");
         });
 
