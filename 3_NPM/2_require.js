@@ -15,28 +15,36 @@
 // For you it is enough to know that it returns a function.
 // Execute it and solve the mistery.
 
-// b. Optional. If you are really cool, you might use the path module
-// to create cross-platform paths.
+// const mistery = require('./lib/misteryFile.js');
+// mistery();
 
-// Ref: https://nodejs.org/api/path.html
+// // b. Optional. If you are really cool, you might use the path module
+// // to create cross-platform paths.
 
-// EXERCISE 2. Export your own file.
-////////////////////////////////////
+// const path = require('path');
+// let myPath = path.resolve(__dirname, 'lib', 'misteryFile.js');
+// console.log(myPath);
 
-// Sometimes one export needs to return multiple variables, and not just
-// one function as in the "misteryFile.js" of Exercise 1. 
-// Create a new file inside the lib/ folder and name it "persons.js". This 
-// file must export two objects containing persons metadata of the type
-// 
-// { first: 'Brendan', last: 'Eich' }
-//
-// { first: 'Bill', last: 'Gates' }
-// 
-// and one method to get a random person object. In other words, the code below 
-// must run.
 
-// Hint: the code below use object destructuring, ref:
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+// // Ref: https://nodejs.org/api/path.html
+
+// // EXERCISE 2. Export your own file.
+// ////////////////////////////////////
+
+// // Sometimes one export needs to return multiple variables, and not just
+// // one function as in the "misteryFile.js" of Exercise 1. 
+// // Create a new file inside the lib/ folder and name it "persons.js". This 
+// // file must export two objects containing persons metadata of the type
+// // 
+// // { first: 'Brendan', last: 'Eich' }
+// //
+// // { first: 'Bill', last: 'Gates' }
+// // 
+// // and one method to get a random person object. In other words, the code below 
+// // must run.
+
+// // Hint: the code below use object destructuring, ref:
+// // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
  
 let { person1, person2, getRandomPerson } = require('./lib/persons.js');
 

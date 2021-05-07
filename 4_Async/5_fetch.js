@@ -41,7 +41,7 @@ const fetch = require("node-fetch");
 const ENDPOINT = "https://swapi.dev/api/";
 
 // Change me.
-let query = 'YOU_NEED_TO_CHANGE_THIS';
+let query = 'people/1/';
 
 fetch(ENDPOINT + query)
   .then(res => {
@@ -54,11 +54,13 @@ fetch(ENDPOINT + query)
     // Fetches gets the headers first, then it process
     // the body asynchronously. 
     
+    // console.log(res);
+
     // It also returns a promise.
     return res.json();
   })
   .then(json => {
-    console.log(json);
+    console.log('We got: ' + json.name);
   })
   .catch(err => {
     console.error(err);

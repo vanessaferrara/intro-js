@@ -18,8 +18,8 @@ let printNews = (allNews) => {
   allNews.forEach(news => console.log(`- Breaking News: ${news.title}`));
 };
 
-let getLatestNews = () => {
-  // Imagine to connect to a server and getting back the  
+let getLatestNews = (cb) => {
+  // Imagine to connect to a server and getting back the news. 
   setTimeout(() => {
     let news = [ 
       {
@@ -32,7 +32,10 @@ let getLatestNews = () => {
       }
     ];
     console.log('News fetched, now I can print them.');
+
+    if (cb) cb(news);
+
   }, 2000);
 };
 
-getLatestNews(printNews);
+getLatestNews();

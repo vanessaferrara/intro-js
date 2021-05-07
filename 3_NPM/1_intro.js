@@ -17,6 +17,7 @@
 
 // Add something here.
 
+const isOdd = require('is-odd');
 let odd = 1;
 console.log(isOdd(odd));
 
@@ -24,8 +25,8 @@ console.log(isOdd(odd));
 // c. Now, make these lines work...
 
 // Add something here.
-
-let even = 2;
+var isEven = require('is-even');
+var even = 2;
 console.log(isEven(even));
 
 // EXERCISE 2. Make the one-liners.
@@ -39,6 +40,17 @@ console.log(isEven(even));
 
 // Now, I know you know how to do it, so why don't you  write down the two 
 // one-liners that reproduce the methods isOdd and isEven used above?
+
+let isOdd = function(num) {
+    return num % 2 !== 0;
+};
+
+
+let num = 2;
+let isOdd = (num) => num % 2 !== 0;
+
+console.log('Is the number odd? ' + (isOdd(num) ? 'Yes' : 'No'));
+
 
 
 // EXERCISE 3. Understanding the packaging.

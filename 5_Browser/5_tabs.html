@@ -46,6 +46,9 @@
             // Tabs.
             let currentTab = null;
             function displayTab(tabId) {
+                
+                // debugger
+
                 if (currentTab) currentTab.className = 'tab';
                 currentTab = document.getElementById(tabId);
                 currentTab.className = 'tab tab-active';
@@ -56,6 +59,7 @@
                 // Exercise: display the right tab when this element is clicked.
                 // Hint: use function displayTab.
                 // Note: no solution provided here, you can make it!
+                displayTab("tab-maybe")
             };
 
             // Option 3 to add an event listener to clicks.
@@ -63,6 +67,7 @@
                 // Exercise: display the right tab when this element is clicked.
                 // Hint: use function displayTab.
                 // Note: no solution provided here, you can make it!
+                displayTab("tab-no")
             });
         </script>
     </body>

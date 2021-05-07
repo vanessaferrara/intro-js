@@ -8,6 +8,7 @@ data/*
 
 *.mp3
 *.ogg
+*.csv
 
 npm-debug.log
 

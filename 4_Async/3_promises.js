@@ -12,7 +12,7 @@
 // Catch the meaning of this intro after you understand promises.
 // Finally you will be really happy.
 
-// If you understand JS promises you will undertand it.
+// If you understand JS promises you will understand it.
 
 // EXERCISE 1. Promises.
 ////////////////////////
@@ -33,7 +33,7 @@
 let comfortObj = 1/3;
 
 let promise = new Promise(function(resolve, reject) {
-  if (Math.random() > comfortObj) resolve(true);
+  if (Math.random() <= comfortObj) resolve(true);
   else reject(false);
 });
 
@@ -54,6 +54,11 @@ let comfortObj = 1/3;
 
 promise = new Promise(function(resolve, reject) {
   // Write the body of this promise.
+  setTimeout(() => {
+    console.log('ASYNC');
+    if (Math.random() <= comfortObj) resolve(true);
+    else reject(false);
+  }, 2000);
 });
 
 console.log('Do you sleep with a Teddy bear?');
@@ -86,6 +91,8 @@ promise
   .catch(res => console.log(`No, you are not.`))
   .finally(() => {
     // Something here.
+    exerciseIsOver = true;
+    console.log('Is exercise over?', '1', '2', '3', '...', 'Yes!');
   });
 
   

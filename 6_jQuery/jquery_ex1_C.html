@@ -87,7 +87,7 @@
 
             // Here 'this' represents a single div.
             
-            // this.html('');
+            $(this).html('This is div number ' + (counter+1));
 
             // Let's differentiate the divs based on the index number.
             // Use the index to differentiate their rgb color code.
@@ -95,7 +95,7 @@
             let blue = baseBlue * counter;
             let someColor = 'rgb(100, 200, ' + blue + ')';
 
-            // this.css({'':''});
+            $(this).css({'background-color': someColor});
 
         });
 
@@ -118,6 +118,7 @@
         $('.myClass-0-3').each(function(counter) {
             // Exercise:
             // Set a fun fact in each div.
+            $(this).html(funFacts[counter]);
         });
 
         // Solution.

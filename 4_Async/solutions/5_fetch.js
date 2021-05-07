@@ -81,6 +81,7 @@ let query = 'people/1';
 // If needed, you may create an anonimous async function.
 
 (async() => {
+
   try {
     const res = await fetch(ENDPOINT + query);
 
@@ -90,12 +91,13 @@ let query = 'people/1';
 
     const user = await res.json();
 
-    console.log(user);
+    console.log('We got ASYNC/AWAIT: ', user.name);
 
   }
   catch(err) {
     console.error(err);
   }
+
 })();
 
 // Exercise 3. Optional. Fetch them all.
@@ -135,6 +137,7 @@ let doFetch = (page = 1) => {
     })
     .then(json => {
       db = [ ...db, ...json.results ];
+      // db = db.concat(json.results);
       doFetch(++page);
     })
     .catch(err => {
