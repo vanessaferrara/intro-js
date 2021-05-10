@@ -12,7 +12,7 @@
 
 // a. It is time to share it with the world. On the cloud.
 
-// There is a plethora of options available, but just a few 
+// There is a plethora of options available, but just a few
 // are free. Amongst these, Heroku is quite popular:
 
 // https://www.heroku.com/
@@ -24,8 +24,8 @@
 
 // 3. Copy file 4_rest.js and rename to app.js (you can pick any name).
 
-// 4. On Heroku, you can no longer set the port for your server, 
-// Heroku will decide it for you at runtime. So, you need to modify 
+// 4. On Heroku, you can no longer set the port for your server,
+// Heroku will decide it for you at runtime. So, you need to modify
 // the PORT declaration with this line:
 
 // const PORT = 3000;
@@ -51,9 +51,9 @@
 // https://devcenter.heroku.com/articles/git#tracking-your-app-in-git
 
 // and follow the instructions to deploy your server to Heroku.
-// 
+//
 // Pay attention at the name of your branch (master vs main),
-// command "git branch" will show you the name of your branch. 
+// command "git branch" will show you the name of your branch.
 
 // b. You will get assigned a unique URL for your web site, such as
 // thawing-inlet-61413.herokuapp.com.
@@ -63,7 +63,7 @@
 
 // You will be soon struck by a CORS error. What are CORS?
 // Cross-Origin Resource Sharing (CORS) is an HTTP header that allows
-// a server to communicate with clients from other origins. 
+// a server to communicate with clients from other origins.
 
 // Ref:
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
@@ -77,19 +77,17 @@
 // containing JSON in their body. The lines below will save you:
 
 // Module cors need to be installed.
-const cors = require('cors');
+const cors = require("cors");
 app.use(cors());
 
- app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Headers", 'Origin,X-Requested-With,Content-Type,Accept,content-type,application/json');
-    next();
+app.use(function (req, res, next) {
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json"
+  );
+  next();
 });
-
-
 
 // c. Optional. Do you want to be really cool? Create a new folder, only with
 // fetch_post.html and related files. Push it to Heroku, and let the two heroku
 // apps communicate with each other.
-
-
-
