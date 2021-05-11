@@ -172,6 +172,12 @@ app.get("/", (req, res) => {
 // Creating HTTPS server.
 /////////////////////////
 
+
+// Redirect all http to https.
+app.get('*', function(req, res) {  
+  res.redirect('https://' + req.headers.host + req.url);
+})
+
 const httpsServer = https.createServer({
   key: fs.readFileSync('./ssl/private.key'),
   cert: fs.readFileSync('./ssl/certificate.pem'),
