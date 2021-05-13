@@ -26,7 +26,6 @@ const SECRET_KEY = require(path.resolve(__dirname, 'secret', 'key.js'));
 const bcrypt = require('bcrypt');
 
 
-
 // Then, let's enable TSL/SSL.
 
 // You will need a valid certificate and public key. A good certificate
@@ -163,6 +162,11 @@ app.use(express.urlencoded({ extended: true }));
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
+// Redirect all http to https.
+app.get('*', function(req, res) {  
+  res.redirect('https://' + req.headers.host + req.url);
+})
+
 // Intercepts all requests.
 app.get("/", (req, res) => {
   res.send("Yay! The server is running!");
@@ -173,10 +177,7 @@ app.get("/", (req, res) => {
 /////////////////////////
 
 
-// Redirect all http to https.
-app.get('*', function(req, res) {  
-  res.redirect('https://' + req.headers.host + req.url);
-})
+
 
 const httpsServer = https.createServer({
   key: fs.readFileSync('./ssl/private.key'),
