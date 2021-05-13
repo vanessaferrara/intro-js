@@ -1,18 +1,39 @@
 function getActivityCard(card) {
   let template =
-`         <ion-card>
+`         
+        <ion-col size-md="3" size-sm="2" size-lg="2">
+          <ion-card style="height: 100%">
             <ion-card-header>
               <ion-card-subtitle>ACTIVITY</ion-card-subtitle>
               <ion-card-title>${card.title}</ion-card-title>
-              <ion-card-content>${card.description}</ion-card-content>
+              <ion-card-content>
+                ${card.description}
                 <div class="ion-text-center">
-                  <a target="_blank" href="${card.link}">Do it!</a>
+                  <ion-button target="_blank" href="${card.link}">Do it!</a>
                 </div>
               </ion-card-content>
           </ion-card>
+        </ion-col>
 `
   return template;
 }
+
+
+function createActivitiesRow(cards) {
+  let row = document.createElement('ion-row');
+  row.id = 'feelbetter-grid';
+  row.className = "ion-justify-content-center";
+  // let col = document.createElement('ion-col');
+  
+  // row.appendChild(col);
+  cards.forEach(card => {
+    row.innerHTML += '\n' + getActivityCard(card);
+  });
+
+  return row;
+}
+
+const TIME_TO_FETCH = 1000;
 
 async function fetchActivities(cb) {
    // Activity Cards.
@@ -80,17 +101,6 @@ async function fetchActivities(cb) {
   ];
 
   return await new Promise((resolve, reject) => {
-    setTimeout(() => resolve(activities), 1010);
+    setTimeout(() => resolve(activities), TIME_TO_FETCH);
   });
-}
-
-function createActivitiesRow(cards) {
-  let row = document.createElement('ion-row');
-  row.id = 'feelbetter-grid';
-  
-  cards.forEach(card => {
-    row.innerHTML += '\n' + getActivityCard(card);
-  });
-
-  return row;
 }
