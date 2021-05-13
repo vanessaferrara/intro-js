@@ -1,15 +1,14 @@
 function getActivityCard(card) {
   let template =
 `         <ion-card>
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">${card.title}</h5>
-                <p class="card-text">${card.description}</p>
-              </div>
-              <div class="card-footer">
-                <a target="_blank" href="${card.link}" class="btn btn-primary">Do it!</a>
-              </div>
-            </div>
+            <ion-card-header>
+              <ion-card-subtitle>ACTIVITY</ion-card-subtitle>
+              <ion-card-title>${card.title}</ion-card-title>
+              <ion-card-content>${card.description}</ion-card-content>
+                <div class="ion-text-center">
+                  <a target="_blank" href="${card.link}">Do it!</a>
+                </div>
+              </ion-card-content>
           </ion-card>
 `
   return template;
@@ -86,23 +85,12 @@ async function fetchActivities(cb) {
 }
 
 function createActivitiesRow(cards) {
-  let row = document.createElement('div');
-  row.className = 'row align-items-center mt-4';
+  let row = document.createElement('ion-row');
   row.id = 'feelbetter-grid';
   
-  let group = document.createElement('div');
-  group.className = 'card-group';
-
-  row.appendChild(group);
-
   cards.forEach(card => {
-    group.innerHTML += '\n' + getActivityCard(card);
+    row.innerHTML += '\n' + getActivityCard(card);
   });
 
   return row;
-}
-
-// Update Progress bar.
-function updateProgress(x) {
-  document.getElementById("progress-bar").style.width = x + '%';
 }

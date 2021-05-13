@@ -41,7 +41,6 @@
     }
 
 </style>
-<link rel="stylesheet" href="./css/style_inputs.css" />
 </head>
 <body>
   <ion-app>
@@ -52,124 +51,167 @@
     </ion-header>
     <ion-content>
 
-    
     <ion-tabs>
 
-      <ion-tab tab="tab-schedule">
-        <ion-nav>YES!</ion-nav>
-        
-        <ion-card style="width: 25rem;">
-          <img src="https://img.prod.portals.aws.zehnder.ch/s/baf8b716b0f7efedd95887aa740d4708b1c9ed99-zna-343276-1200-816/441x300m.jpg" class="card-img-top" alt="Beautiful day!">
-          <ion-card-header>
-            <ion-card-subtitle>Feeling</ion-card-subtitle>
-            <ion-card-title>This is a beautiful day!</ion-card-title>
-          </ion-card-header>
-          
-          <ion-card-content>
-            <p>Beauty is power; a smile is its sword.</p>
-            <a href="https://www.luzern.com/en/" class="btn btn-primary" target="_blank">Get there!</a>
-          </ion-card-content>
-        </ion-card>
+      <ion-tab tab="tab-yes">
+        <ion-grid>
+          <ion-row>
+            <!-- <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4"> -->
+              <ion-col>
+              <ion-card style="width: 25rem;" class="ion-margin">
+                <img src="https://img.prod.portals.aws.zehnder.ch/s/baf8b716b0f7efedd95887aa740d4708b1c9ed99-zna-343276-1200-816/441x300m.jpg" alt="Beautiful day!" style="width: 25rem;">
+                <ion-card-header>
+                  <ion-card-subtitle>Feeling</ion-card-subtitle>
+                  <ion-card-title>This is a beautiful day!</ion-card-title>
+                </ion-card-header>
+                
+                <ion-card-content>
+                  <p>Beauty is power; a smile is its sword.</p>
+                  <a href="https://www.luzern.com/en/"  target="_blank">Get there!</a>
+                </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+       
   
          <!-- Img Source: https://www.luzerner-rundschau.ch/stadt/detail/article/initiative-aufwertung-der-innenstadt-abgelehnt-00123055/ 
          -->
       </ion-tab>
     
-      <ion-tab tab="tab-speaker">
-        <ion-nav>MAYBE!</ion-nav>
-        <ion-card style="width: 25rem;">
-          <img src="https://i.pinimg.com/originals/71/28/c5/7128c55d18eb6e235dee15e32f8039f6.jpg" class="card-img-top" alt="OKish Day">
-          <div class="card-body">
-            <h5 class="card-title">This is an OKish day...</h5>
-            <p class="card-text">It's always sunny above the clouds. Always. Every day on earth - every day I have ever had - was secretly sunny, after all.</p>
-            <a href="https://weather.com/weather/tenday/l/Lucerne+Lucerne+Switzerland?canonicalCityId=48f8e1733108c3c69b3e257e7dfff3bc848123bed3715657220bd8ba1ad1eee3" target="_blank" class="btn btn-primary">Check it</a>
-          </div>
-        </ion-card>
-        <!-- Img Source: https://www.pinterest.com/pin/210472982565641957/ -->
+      <ion-tab tab="tab-maybe">
+        <ion-grid>
+          <ion-row>
+            <!-- <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4"> -->
+              <ion-col>
+              <ion-card style="width: 25rem;" class="ion-margin">
+                <img src="https://i.pinimg.com/originals/71/28/c5/7128c55d18eb6e235dee15e32f8039f6.jpg" alt="OKish Day">
+                <!-- Img Source: https://www.pinterest.com/pin/210472982565641957/ -->
 
+                <ion-card-header>
+                  <ion-card-subtitle>Feeling</ion-card-subtitle>
+                  <ion-card-title>This is an OKish day...</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <p>
+                  It's always sunny above the clouds. Always. Every day on earth - every day I have ever had - was secretly sunny, after all.</p>
+                  <a href="https://weather.com/weather/tenday/l/Lucerne+Lucerne+Switzerland?canonicalCityId=48f8e1733108c3c69b3e257e7dfff3bc848123bed3715657220bd8ba1ad1eee3" target="_blank">Check it</a>
+                </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+       
       </ion-tab>
     
-      <ion-tab tab="tab-map" component="page-map">
-        <ion-nav>NO!</ion-nav>
-
-
+      <ion-tab tab="tab-no">
         <ion-grid>
-
-          <div class="row">
-            <div class="col-sm">
-              <ion-card style="width: 25rem;">
-                  <img src="https://api.time.com/wp-content/uploads/2018/04/trumpstormycover.jpg?quality=85&w=1012" class="card-img-top" alt="S****y Day">
-                  <div class="card-body">
-                    <h5 class="card-title">This is a s****y day!</h5>
-                    <p class="card-text">Really?</p>
+          <ion-row id="tofade">
+            <ion-col>
+            <!-- <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4"> -->
+              <ion-card style="width: 25rem;" class="ion-margin">
+                  <img src="https://api.time.com/wp-content/uploads/2018/04/trumpstormycover.jpg?quality=85&w=1012" alt="S****y Day">
+                  <!-- Img Source: https://time.com/magazine/us/5237427/april-23rd-2018-vol-191-no-15-u-s/ -->
+                  <ion-card-header>
+                    <ion-card-subtitle>Feeling</ion-card-subtitle>
+                    <ion-card-title>This is a s****y day!</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                   <p>Really?</p>
                     <ion-button 
                     onclick="doSomethingAboutIt()">Do something about it</ion-button>
-                  </div>
-                  
-                  <!-- Img Source: https://time.com/magazine/us/5237427/april-23rd-2018-vol-191-no-15-u-s/ -->
+                  </ion-card-content>
               </ion-card>
-            </div>
-          </div>
-  
-          <div id="row-progress" class="row" style="display: none;">
-            <div class="col-sm">
+            </ion-col>
+          </ion-row>
+
+
+      
+          <ion-row id="row-progress" class="row" style="display: none;">
+            <ion-col>
               I am loading a list of things to do that should make you feel better.
   
               <div class="progress" style="width: 80%; margin: 0 auto;">
                 <div id="progress-bar" 
                   class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                 </div>
-            </div>
-          </div>
+              </ion-col>
+            </ion-row>
   
         </ion-grid>                
       
       </ion-tab>
-    
-      <ion-tab tab="tab-about" component="page-about">
-        <ion-nav></ion-nav>
-        ABOUT
-      </ion-tab>
-    
+
       <ion-tab-bar slot="bottom">
 
-        <ion-tab-button tab="tab-schedule">
-          <ion-icon name="calendar"></ion-icon>
-          <ion-label>Schedule</ion-label>
-          <ion-badge>6</ion-badge>
+        <ion-tab-button tab="tab-yes">
+          <ion-icon name="heart-outline"></ion-icon>          
+          <ion-label>YES!</ion-label>
         </ion-tab-button>
     
-        <ion-tab-button tab="tab-speaker">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label>Speakers</ion-label>
+        <ion-tab-button tab="tab-maybe">
+          <ion-icon name="heart-half-outline"></ion-icon>          <ion-label>MAYBE!</ion-label>
         </ion-tab-button>
     
-        <ion-tab-button tab="tab-map">
-          <ion-icon name="map"></ion-icon>
-          <ion-label>Map</ion-label>
-        </ion-tab-button>
-    
-        <ion-tab-button tab="tab-about">
-          <ion-icon name="information-circle"></ion-icon>
-          <ion-label>About</ion-label>
+        <ion-tab-button tab="tab-no">
+          <ion-icon name="skull-outline"></ion-icon>
+          <ion-label>NO!</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     
     </ion-tabs>
+    
   </ion-content>
 
 
 <script src="js/activities.js"></script>
 
 <script>
+  async function presentLoading() {
+    const loading = document.createElement('ion-loading');
+
+    loading.cssClass = 'my-custom-class';
+    loading.message = 'Please wait...';
+    loading.duration = 2000;
+
+    document.body.appendChild(loading);
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
+}
+
+async function presentLoadingWithOptions() {
+  const loading = document.createElement('ion-loading');
+
+  loading.spinner = null;
+  loading.duration = 5000;
+  loading.message = 'Click the backdrop to dismiss early...';
+  loading.translucent = true;
+  loading.cssClass = 'custom-class custom-loading';
+  loading.backdropDismiss = true;
+
+  document.body.appendChild(loading);
+  await loading.present();
+
+  const { role, data } = await loading.onDidDismiss();
+  console.log('Loading dismissed with role:', role);
+}
+</script>
+
+<script>
 
            // Do something about it.
  function doSomethingAboutIt() {
       
+      debugger
+
       // In principle, we could add async to this callback,
       // however, jQuery is complaining, so need to create
       // a self-executing anonymous async function below.
-      $(".row").first().fadeOut("fast", function() {
+      $("#tofade").first().fadeOut("fast", function() {
 
 
         $('#row-progress').fadeIn();
