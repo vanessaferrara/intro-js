@@ -1,17 +1,17 @@
 function getActivityCard(card) {
   let template =
 `         
-        <ion-col size-md="3" size-sm="2" size-lg="2">
+        <ion-col size-md="3" size-sm="6" size-lg="2">
           <ion-card style="height: 100%">
             <ion-card-header>
               <ion-card-subtitle>ACTIVITY</ion-card-subtitle>
               <ion-card-title>${card.title}</ion-card-title>
               <ion-card-content>
                 ${card.description}
+                </ion-card-content>
                 <div class="ion-text-center">
                   <ion-button target="_blank" href="${card.link}">Do it!</a>
                 </div>
-              </ion-card-content>
           </ion-card>
         </ion-col>
 `
