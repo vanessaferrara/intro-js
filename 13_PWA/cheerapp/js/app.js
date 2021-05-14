@@ -79,7 +79,8 @@ function showNotification() {
           body: body,
           icon: 'img/smile.png',
           vibrate: [200, 100, 200, 100, 200, 100, 200],
-          tag: 'vibration-sample'
+          tag: 'vibration-sample',
+          renotify: true
         });
       });
     }
