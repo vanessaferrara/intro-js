@@ -9,7 +9,7 @@ function getActivityCard(card) {
               <ion-card-content>
                 ${card.description}
                 </ion-card-content>
-                <div class="ion-text-center">
+                <div class="ion-text-center ion-align-items-end">
                   <ion-button target="_blank" href="${card.link}">Do it!</a>
                 </div>
           </ion-card>
