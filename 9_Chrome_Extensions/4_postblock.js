@@ -7,15 +7,14 @@
 ////////////////////////////
 
 
-// Exercise 4: Remove unwanted social media posts.
+// Exercise 4: Bonus. Remove unwanted social media posts.
 //////////////////////////////////////////////////
 
 // We are immersed into social media. You don't? Good for you!
 // But poor us we are "forced" to see posts we don't care about
 // or simply don't want to see.
 
-// It is time to take back your freedom with the PLock (Post bLock)
-// extension!
+// It is time to take back your freedom with the Post Block extension!
 
 // You will learn about.
 

@@ -128,20 +128,6 @@ function doSearchByImg() {
 
 }
 
-// function isSponsored(el) {
-//     let children = el.children;
-//     let idx = 0;
-//     let sponsored = 'Sponsored';
-//     debugger;
-//     for (let i = 0 ; i < children.length ; i++) {
-//         // "position: absolute; top: 3em;"
-//         if (!children[i].hasAttribute('style')) {
-//             if (children[i].innerText !== sponsored.charAt(idx)) return false;
-//             idx++;
-//         }
-//     }
-// }
-
 function hidePost (el, limit) {
         debugger
     // We go up the DOM, from child to parent and
