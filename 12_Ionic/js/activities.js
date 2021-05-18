@@ -33,7 +33,7 @@ function createActivitiesRow(cards) {
   return row;
 }
 
-const TIME_TO_FETCH = 1000;
+const TIME_TO_FETCH = 4000;
 
 async function fetchActivities(cb) {
    // Activity Cards.
