@@ -21,7 +21,14 @@
 // 3. Modify the content of a page with the scripting API.
 
 
-// a. Add the options page.
+// a. Add the scripting permission.
+///////////////////////////////////
+
+// The app is throwing an error upon trying to set the background
+// of the page. Add the scripting permission to the manigest.
+
+
+// b. Add the options page.
 ///////////////////////////
 
 // Inside the manifest, add a new line:
@@ -30,10 +37,5 @@
 
 // Open the options page from Chrome's menu.
 
-// a. Checks the options page.
-///////////////////////////
 
-// Inside the manifest, add a new line:
-
-// "options_page": "options.html",
 
