@@ -4,11 +4,11 @@
 // in the import/require declaration.
 
 let person1 = {
-    
+
     first: 'Brendan',
-    
+
     last: 'Eich'
-    
+
 };
 
 let person2 = {
@@ -19,7 +19,7 @@ let person2 = {
 
 };
 
-let getRandomPerson = () => Math.random() > 0.5 ? person1 : persone2;
+let getRandomPerson = () => Math.random() > 0.5 ? person1 : person2;
 
 module.exports = { person1, person2, getRandomPerson };
 
