@@ -17,7 +17,7 @@
 // like to know in the most concise way possible?
 
 // In this file, comments contain the instructions for the exercises
-//  as well as useful hints.
+// as well as useful hints.
 
 // Enough said. Let's begin with understanding how to move around
 // in the Atom editor.
@@ -29,7 +29,7 @@
 // EXERCISE 1 Indentation.
 //////////////////////////
 
-// a. Select all the code below and press TAB. Ta da!
+// a. Select all the code below and press TAB or Shift. Ta da!
 // Did something happened? If not, please check again the slides
 // to setup Atom.
 
@@ -45,7 +45,7 @@ a--;
 // Automatic indentation simply adjustes the space on the left-hand
 // side of your code. It neither adds missing parentheses nor trims
 // white space between words. That is up to you to do it.
-// Do it, does it read better? Can you grasp what it is doing?
+// Do it, does it read better? Can you grasp what the code is doing?
 
 
 // EXERCISE 2 Linting.
@@ -61,7 +61,7 @@ a--;
 // Below is some code with some errors and warnings. Next to the line with
 // an error there should be a red dot. If you hover over the line, you will
 // get additional information about the error. In addition, all the
-//  errors are available in a separate panel at the bottom of the page.
+// errors are available in a separate panel at the bottom of the page.
 
 // Start fixing the first error, more errors might pop up, because the first
 // error was blocking the execution of the code inspection.
@@ -69,7 +69,7 @@ a--;
 // If you don't know how to fix an error, just comment out the line with //.
 // However, for some errors you will find a link with additional
 // information about how to fix inside the tooltip, and for others you can
-// simply click  a "Fix" button.
+// simply click a "Fix" button.
 
 // Hint: follow the pattern.
 a = 1
@@ -91,7 +91,7 @@ function(notUsed) {
 // a. Auto complete for console.log, On the next line, start typing log.
 // A popup window will show up with suggestion, pick the first one.
 
-// b. Auto complete for a personl note to fix this line of code. Start typing
+// b. Auto complete for a personal note to fix this line of code. Start typing
 // fix.
 
 // c. What are all the other suggestions? Atom collects and indexes all the
@@ -106,7 +106,7 @@ function(notUsed) {
 // Here we learn just a couple of useful shortcuts.
 
 // a. Close this project. Ok, here is the catch 22, you have to do it
-// with the mouse. Right click on the name "js-programming-fundamentals" and
+// with the mouse. Right click on the name "app-dev" and
 // select "Remove Project Folder." Don't worry it won't delete it from
 // the file system, just from Atom. Then reopen it using the shortcut
 // Ctrl-Shift-A.
@@ -116,8 +116,8 @@ function(notUsed) {
 let uselessCode = 'I am useles';
 
 // c. Cool. What other shorcuts are available? Here is a shortcut to find
-// them all. Ctrl-Shift-P. Some Look around and remember how to get here, we will
-// use it later.
+// them all. Ctrl-Shift-P. Some Look around and remember how to get here,
+// we will use it later.
 
 
 // EXERCISE 4. Bracket Matching.
@@ -138,9 +138,10 @@ if (true) {
 }
 
 // b. That was easy, furthermore Atom alreadys highlights the matching
-// parentheses In more complicated cases, you might want to use the
+// parentheses. In more complicated cases, you might want to use the
 // keyboard shortcut. What is it? You can search for it in the menu of all
-// Atom commands. It is also written next to the menu option you just clicked.
+// Atom commands. It is also written next to the menu option you clicked 
+// for exercise 4.a.
 
 // EXERCISE 5. Git.
 ///////////////////
@@ -154,9 +155,9 @@ if (true) {
 
 // c. Add a proper "commit" message to describe your changes. Be concise.
 
-// d. Good! Your changes are saved. Normally, you would be able to push them
-// to GitHub, but we won't do it now. In fact you don't have the permissions,
-// but we will come back to this later.
+// d. Good! Your changes are saved. If you have the permissions, you will 
+// be able to push your code online, otherwise you may have to do a 
+// "pull request". We will learn about "pull requests" later.
 
 // EXERCISE 6. Hydrogen.
 ////////////////////////
