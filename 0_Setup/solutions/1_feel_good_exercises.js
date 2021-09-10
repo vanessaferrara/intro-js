@@ -8,8 +8,8 @@
 // but my students are really nice, so I felt ashemed of lying and I
 // have added the solutions below.
 
-// Note: this code is relevant for the Atom editor configured according to
-// course's slides.
+// Note: this are the solutions based on the Atom's file. For VS Code
+// it's basically the same.
 
 // EXERCISE 1 Indentation.
 //////////////////////////

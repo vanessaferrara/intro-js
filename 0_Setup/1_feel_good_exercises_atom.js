@@ -2,7 +2,7 @@
 // Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
 ///////////////////////////////////////////////////////////////////////////////
 
-// Note: this code is relevant for the Atom editor configured according to
+// Note: this code is relevant for the editor Atom, configured according to
 // course's slides.
 
 // All the text that follows a double "slash", that is //, is a comment.
@@ -122,7 +122,7 @@ let uselessCode = 'I am useles';
 
 // EXERCISE 4. Bracket Matching.
 ////////////////////////////////
-// JavaScript wraps blocks of codes in curly brackes: { SOME CODE }.
+// JavaScript wraps blocks of codes in curly brackets: { SOME CODE }.
 // A common rookie mistake is to forget to open or close a parenthesis,
 // causing an error. Unfortunately, these common mistakes are surprisingly
 // difficult to catch for the untrained eye and may cause acute distress
