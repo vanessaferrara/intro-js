@@ -91,7 +91,7 @@ function(notUsed) {
     console.log('Hello!');
 }
 
-// EXERCISE 3. Autocompletion.
+// EXERCISE 3. Productivity.
 //////////////////////////////
 // VS Code comes with snippet auto-completion. Cool! But what is a "snippet" ?
 // A snippet is simply a portion of code that you can reuse.
@@ -99,38 +99,43 @@ function(notUsed) {
 // some useful features of the editor.
 
 // a. Auto complete for console.log, On the next line, start typing log.
-// A popup window will show up with suggestion, pick the first one.
+// A popup window will show up with some suggestions. Find the right one
+// to have console.log() autocompleted for you.
 
-// b. Auto complete for a personal note to fix this line of code. Start typing
-// fix.
+// b. What are all the other suggestions? They are specific JS constructs,
+// some of which you will learn in this course. Actually, only a small 
+// fraction of which you will learn about in this course. It's up to you
+// to learn the rest!
 
-// c. What are all the other suggestions? VS Code collects and indexes all the
-// words in the projects and suggest them to you as you type. Sometimes
-// annoying, sometimes useful.
-
-// EXERCISE 3. Shorcuts.
-////////////////////////
+// EXERCISE 4. Producticity: Shorcuts and More.
+///////////////////////////////////////////////
 // Proficient programmers use the mouse as little as possible, and try
 // to do everything with the keyboard. It is actually possible to code
 // without using the mouse at all, but we are still far from that point.
-// Here we learn just a couple of useful shortcuts.
+// Here we just learn a couple of useful tricks.
 
-// a. Close this project. Ok, here is the catch 22, you have to do it
-// with the mouse. Right click on the name "app-dev" and
-// select "Remove Project Folder." Don't worry it won't delete it from
-// the file system, just from VS Code. Then reopen it using the shortcut
-// Ctrl-Shift-A.
-
-// b. Comment out useless code with Ctrl-/. Notice if you applied the
+// a. Comment out useless code with Ctrl-/. Notice if you applied the
 // command multiple times, it will uncomment/comment/uncomment... it.
-let uselessCode = 'I am useles';
+
+uselessCode = 'I am useless';
 
 // c. Cool. What other shorcuts are available? Here is a shortcut to find
-// them all. Ctrl-Shift-P. Some Look around and remember how to get here,
+// them all. Ctrl-Shift-P. Look around and remember how to get here,
 // we will use it later.
 
+// d. It would great if we could have a clone of ourselves, or even better 
+// multiple clones. It turns out that you can do it in VS Code! Highlight
+// the word "not". Then press Ctrl-D as many times as needed to highlight
+// all the next occurrences of the word "not". At every word "not" there is
+// a new cursor, so you can write multiple rows at once. Delete the word "not"
+// and replace the explanation mark with a sad face.
 
-// EXERCISE 4. Bracket Matching.
+catchMeIfYouCan1 = 'You did not catch me!';
+catchMeIfYouCan2 = 'You did not catch me!';
+catchMeIfYouCan3 = 'You did not catch me!';
+
+
+// EXERCISE 5. Bracket Matching.
 ////////////////////////////////
 // JavaScript wraps blocks of codes in curly brackets: { SOME CODE }.
 //
@@ -154,7 +159,7 @@ if (true) {
 // in the menu of all VS Code commands. How do you open that menu? If you don't 
 // remember, go back to exercise 3.c.
 
-// EXERCISE 5. Git.
+// EXERCISE 6. Git.
 ///////////////////
 // You made good progress. It is time to look back at when you started
 // this exercise. You were a different person, and so this was a different
@@ -175,7 +180,7 @@ if (true) {
 // "pull request". We will learn about "pull requests" later.
 // To push now look for the a push icon at the bottom-right and click it.
 
-// EXERCISE 6. Code Runner.
+// EXERCISE 7. Code Runner.
 ///////////////////////////
 // This is the final obstacle between you and beginning Part 1.
 
