@@ -60,7 +60,7 @@ console.log(person.name);
 console.log(person.year);
 
 // EXERCISE 2. Add and remove properties to the person object.
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 // Now you realize that it makes more sense to split the property 'name' into
 // two: 'first' and 'last' name. Accordingly you delete the propery name.
@@ -95,7 +95,7 @@ console.log(persons[1]);
 // d. Access the property year of the second element of the array.
 console.log(persons[1].year);
 
-// EXERCISE 3. Pick a random item in the array of persons.
+// EXERCISE 4. Pick a random item in the array of persons.
 //////////////////////////////////////////////////////////
 
 // Hint. Generate a random number between 0 and the total
@@ -106,7 +106,7 @@ console.log(randomNumber);
 
 console.log(persons[randomNumber]);
 
-// EXERCISE 4. Add a new elements to the array of persons.
+// EXERCISE 5. Add a new elements to the array of persons.
 //////////////////////////////////////////////////////////
 
 // You just realized that Phil Katz (born 1962) also deserves to be
@@ -129,7 +129,7 @@ persons.push(phil);
 // Verify that you added at the bottom.
 console.log(persons[3]);
 
-// EXERCISE 5. Replace an element in the array of persons.
+// EXERCISE 6. Replace an element in the array of persons.
 //////////////////////////////////////////////////////////
 
 // Maybe you hurried too much with Phil Katz. What about
@@ -144,7 +144,7 @@ persons[3] = {
 // Verify who is the bottom of the array.
 console.log(persons[3]);
 
-// EXERCISE 6. Remove elements from the array of persons.
+// EXERCISE 7. Remove elements from the array of persons.
 //////////////////////////////////////////////////////////
 
 // You decided to give a more consistent look to the persons array:
@@ -158,7 +158,7 @@ persons.splice(1,2);
 // Verify the content of the updated array.
 console.log(persons);
 
-// EXERCISE 7. Loop through the elements of an array.
+// EXERCISE 8. Loop through the elements of an array.
 /////////////////////////////////////////////////////
 
 // "Where there is an array there is a loop" is a famous adagio. Actually,
@@ -202,7 +202,7 @@ for (let i=0; i < persons.length; i++) {
 }
 paragraph += '.';
 
-// EXERCISE 7. Loop through the properties of an object.
+// EXERCISE 9. Loop through the properties of an object.
 ////////////////////////////////////////////////////////
 
 // Looping through the properties of an object is slightly different
@@ -227,7 +227,7 @@ for (let property in obj) {
     }
 }
 
-// EXERCISE 8. Bonus. Constant objects.
+// EXERCISE 10. Bonus. Constant objects.
 ///////////////////////////////////////
 // This is weird, and it takes a lot of JavaScript to understand why it is so.
 // Constant objects are not constant. For now, just embrace it.
