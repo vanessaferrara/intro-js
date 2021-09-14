@@ -40,12 +40,12 @@
 
 // integer.
 morph = 1;
-typeof morph;
+console.log(typeof morph);
 // It is good practice to always add the semicolon at the of a statement.
 
 // Floating point
 morph = 1.1;
-typeof morph;
+console.log(typeof morph);
 // Note Both floating point and integer numbers belong to the same primitive
 // type: 'number'. Other programming language may distinguish different
 // subtypes, such as positive-only, floating point, etc, to save space
@@ -54,7 +54,7 @@ typeof morph;
 // Strings
 
 morph = 'I morphed into a string.'
-typeof morph;
+console.log(typeof morph);
 // JavaScript is dynamically (or loosely) typed. This means that
 // the type of a variable can change at run-time. Languages that are
 // statically (or strongly typed) will throw an error if you attempt to
@@ -63,13 +63,13 @@ typeof morph;
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
 morph = 'A';
-typeof morph;
+console.log(typeof morph);
 
 // Booleans.
 morph = true;
-typeof morph;
+console.log(typeof morph);
 morph = false;
-typeof morph;
+console.log(typeof morph);
 
 // Not much to say about booleans, right?
 
@@ -100,7 +100,7 @@ typeof undefined;
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
 
 // Now compute:
-a*b*c*d;
+console.log(a*b*c*d);
 
 // EXERCISE 2. Variable Naming.
 ///////////////////////////////
@@ -125,6 +125,7 @@ a*b*c*d;
 // luzernPopulation
 // is probably a good candidate. But the final choice is yours!
 luzernPopulation = a*b*c*d;
+console.log(luzernPopulation);
 
 // EXERCISE 3. Random numbers.
 //////////////////////////////
@@ -196,7 +197,7 @@ str2 = 'Just like everyone else.';
 // the variable finalStr. You do not want anybody to change that string
 // ever again, so you decide it to assign it to constant.
 const myFinalStr = finalStr;
-myFinalStr
+console.log(myFinalStr)
 
 // Now try to change it to something else.
 myFinalStr = 'something else'
