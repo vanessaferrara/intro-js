@@ -7,8 +7,6 @@
 // EXERCISE 1. Fibonacci.
 /////////////////////////
 
-// Some changes
-
 // The Fibonacci sequence is such that each number is the sum of
 // the two preceding ones in the sequence, starting from 0 and 1.
 // You can learn more here: https://en.wikipedia.org/wiki/Fibonacci_number
