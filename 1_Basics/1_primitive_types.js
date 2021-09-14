@@ -200,7 +200,7 @@ const myFinalStr = finalStr;
 console.log(myFinalStr);
 
 // Now try to change it to something else.
-myFinalStr = 'something else'
+myFinalStr = 'something else';
 
 // You should have seen error below. We will later learn that constants behave
 // differently with objects, but for now you are done, you completed the first
