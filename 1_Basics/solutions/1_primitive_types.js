@@ -16,7 +16,8 @@
 ///////////////////////////////
 
 // Not really an exercise, it is more a small warm up to recall the different
-// primitive types in JavaScript and to get you familiar with ATOM Hydrogen.
+// primitive types in JavaScript and to get you familiar with running code 
+// your editor.
 
 // Create a variable named morph and assign a value to it for each
 // primitive type in JavaScript. The typeof operator gives the type
@@ -25,27 +26,45 @@
 // Some operations may be allowed for a certain primitive type and raise
 // an error for another one.
 
-// Important! I am assuming you are using the Hydrogen package to
-// run these exercise. If so, you may avoid declarig variables with let.
+// Important! Here we do not declare variables with let. That is, we simply do:
+//
+// a = 1;
+//
+// instead of 
+//
+// let a = 1;
+//
 // This has the advantage that you can re-run the same command without
-// throwing errorr such as  "variable already defined",
-// This has also the disadvantage that the linter will complain about
-// the variable not being defined. Let it complain, he is a grumpy old linter.
+// throwing errors such as "variable already defined" with the Hydrogen
+// package in Atom. Code Runner in VS Code does not have this issue.
+//
+// This has also the disadvantage that the linter may complain about
+// the variable not being defined. If so, let it complain, he is a
+// grumpy old linter.
 
-// Do you remember how to use Hydrogen? It is very easy:
-// - to execute the line where the cursor is, press Ctrl-Enter.
-// - to execute multiple lines at once, highlight them, and press Ctrl-Enter.
+// Do you remember how to run commands? It is very easy:
+//
+// Ctrl-Enter (in Atom), or
+// Ctrl-Alt-N (in VS Code).
+//
+// To execute multiple lines at once, just highlight them all.
 
 // Numbers.
 
 // integer.
 morph = 1;
-typeof morph;
 // It is good practice to always add the semicolon at the of a statement.
+
+// What type is morph?
+console.log(typeof morph);
+
+// No output (VS Code)? Try using console.log
+console.log(typeof morph);
 
 // Floating point
 morph = 1.1;
-typeof morph;
+console.log(typeof morph);
+
 // Note Both floating point and integer numbers belong to the same primitive
 // type: 'number'. Other programming language may distinguish different
 // subtypes, such as positive-only, floating point, etc, to save space
@@ -54,7 +73,7 @@ typeof morph;
 // Strings
 
 morph = 'I morphed into a string.'
-typeof morph;
+console.log(typeof morph);
 // JavaScript is dynamically (or loosely) typed. This means that
 // the type of a variable can change at run-time. Languages that are
 // statically (or strongly typed) will throw an error if you attempt to
@@ -63,20 +82,20 @@ typeof morph;
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
 morph = 'A';
-typeof morph;
+console.log(typeof morph);
 
 // Booleans.
 morph = true;
-typeof morph;
+console.log(typeof morph);
 morph = false;
-typeof morph;
+console.log(typeof morph);
 
 // Not much to say about booleans, right?
 
 // Undefined
 let iAmNotDefinedYet;
-typeof iAmNotDefinedYet;
-typeof undefined;
+console.log(typeof iAmNotDefinedYet);
+console.log(typeof undefined);
 // If something does not exist or has not yet been initialized, its type
 // is 'undefined'. We will come back with more examples to this later.
 
@@ -90,6 +109,8 @@ typeof undefined;
 // separate variables named a, b, c, and d.
 // Multiply these variables to obtain the size of the population
 // of the city of Luzern as reported by Wikipedia Eng. as of 03.06.2020.
+// Update. as of 09.10.2021, the population of Luzern according to Wikipedia
+// hasn't changed.
 
 // a. Compute (18 + 107) / (5 * 25)
 a = (18 + 107) / (5 * 25);
@@ -99,7 +120,8 @@ b = Math.sqrt(1000000);
 c = (123 % Math.pow(9, 2)) - 1;
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
 d = Math.floor(2.123456789);
-a*b*c*d;
+
+console.log(a*b*c*d);
 
 // EXERCISE 2. Variable Naming.
 ///////////////////////////////
@@ -124,6 +146,7 @@ a*b*c*d;
 // luzernPopulation
 // is probably a good candidate. But the final choice is yours!
 luzernPopulation = a*b*c*d;
+console.log(luzernPopulation);
 
 // EXERCISE 3. Random numbers.
 //////////////////////////////
@@ -132,10 +155,12 @@ luzernPopulation = a*b*c*d;
 // in a variable (and pick a proper name for the variable!).
 // Hint. The Math object is your friend .
 randomNumber = Math.random();
+console.log(randomNumber);
 
 // b. Update the variable so that the value of the random number is
 // between 0 and the one hundred thoudands.
 randomNumber*= 100000;
+console.log(randomNumber);
 
 // EXERCISE 4. Conditionals.
 ////////////////////////////
@@ -205,7 +230,7 @@ finalStr = finalStr.substring(0, (finalStr.length - 1)) + '!';
 // the variable finalStr. You do not want anybody to change that string
 // ever again, so you decide it to assign it to constant.
 const myFinalStr = finalStr;
-myFinalStr
+console.log(myFinalStr);
 
 // Now try to change it to something else.
 myFinalStr = 'something else'

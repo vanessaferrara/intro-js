@@ -75,8 +75,8 @@ console.log(typeof morph);
 
 // Undefined
 let iAmNotDefinedYet;
-typeof iAmNotDefinedYet;
-typeof undefined;
+console.log(typeof iAmNotDefinedYet);
+console.log(typeof undefined);
 // If something does not exist or has not yet been initialized, its type
 // is 'undefined'. We will come back with more examples to this later.
 
@@ -197,10 +197,10 @@ str2 = 'Just like everyone else.';
 // the variable finalStr. You do not want anybody to change that string
 // ever again, so you decide it to assign it to constant.
 const myFinalStr = finalStr;
-console.log(myFinalStr)
+console.log(myFinalStr);
 
 // Now try to change it to something else.
-myFinalStr = 'something else'
+myFinalStr = 'something else';
 
 // You should have seen error below. We will later learn that constants behave
 // differently with objects, but for now you are done, you completed the first

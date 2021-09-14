@@ -15,7 +15,7 @@
 
 obj = {};
 // An empty object.
-typeof obj;
+console.log(typeof obj);
 // Objects are containers for variables indexed by a key (in other programming
 // languages they may be called maps or dictionaries). They can contain
 // variables of any type inside.
@@ -24,14 +24,14 @@ typeof obj;
 
 array = [];
 // An empty array.
-typeof array;
+console.log(typeof array);
 // Arrays are containers for variables indexed by a number. They are faster
 // to iterate through than objects. Like objects, they can contain variables
 // of any type.
 
 // A special type of object, the null object.
 obj = null;
-typeof null;
+console.log(typeof null);
 // Ok, this is confusing. null is an object? In fact, in JavaScript
 // everything is an object behind the scenes, but this is an unfortunate
 // design decision for the language. You just have to live with this quirk,
@@ -53,19 +53,22 @@ person = {
     year: 1961
 };
 
+console.log(person);
+
 // b. Access the properties of the person object.
-person.name;
-person.year;
+console.log(person.name);
+console.log(person.year);
 
 // EXERCISE 2. Add and remove properties to the person object.
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 // Now you realize that it makes more sense to split the property 'name' into
 // two: 'first' and 'last' name. Accordingly you delete the propery name.
 person.first = 'Brendan';
 person.last = 'Eich';
 delete person.name;
-person;
+
+console.log(person);
 
 // EXERCISE 3. Create an array of persons.
 //////////////////////////////////////////
@@ -79,27 +82,31 @@ persons = [
     { first: 'Napoleon', last: 'Bonaparte', year: 1821},
 ];
 
+console.log(persons);
+
 // b. Count how many elements are in the array.
-persons.length;
+console.log(persons.length);
 
 // c. Access the second element of the array.
-persons[1];
+console.log(persons[1]);
 // Arrays are 0-indexed, that is the first element has index 0,
 // the second element 1, and so on.
 
 // d. Access the property year of the second element of the array.
-persons[1].year;
+console.log(persons[1].year);
 
-// EXERCISE 3. Pick a random item in the array of persons.
+// EXERCISE 4. Pick a random item in the array of persons.
 //////////////////////////////////////////////////////////
 
 // Hint. Generate a random number between 0 and the total
 // number of elements in the array, then "floor" it with the corresponding
 // method of the Math object.
 randomNumber = Math.floor(Math.random()*persons.length);
-persons[randomNumber];
+console.log(randomNumber);
 
-// EXERCISE 4. Add a new elements to the array of persons.
+console.log(persons[randomNumber]);
+
+// EXERCISE 5. Add a new elements to the array of persons.
 //////////////////////////////////////////////////////////
 
 // You just realized that Phil Katz (born 1962) also deserves to be
@@ -111,10 +118,18 @@ persons[randomNumber];
 // you would like to add the element. For instance the method `push`
 // will add at the bottom of the array.
 
-// Verify that you added at the bottom.
-persons[3];
+phil = {
+    first: 'Phil',
+    last: 'Katz',
+    year: 1962
+};
 
-// EXERCISE 5. Replace an element in the array of persons.
+persons.push(phil);
+
+// Verify that you added at the bottom.
+console.log(persons[3]);
+
+// EXERCISE 6. Replace an element in the array of persons.
 //////////////////////////////////////////////////////////
 
 // Maybe you hurried too much with Phil Katz. What about
@@ -127,9 +142,9 @@ persons[3] = {
 };
 
 // Verify who is the bottom of the array.
-persons[3];
+console.log(persons[3]);
 
-// EXERCISE 6. Remove elements from the array of persons.
+// EXERCISE 7. Remove elements from the array of persons.
 //////////////////////////////////////////////////////////
 
 // You decided to give a more consistent look to the persons array:
@@ -141,9 +156,9 @@ persons[3];
 persons.splice(1,2);
 
 // Verify the content of the updated array.
-persons;
+console.log(persons);
 
-// EXERCISE 7. Loop through the elements of an array.
+// EXERCISE 8. Loop through the elements of an array.
 /////////////////////////////////////////////////////
 
 // "Where there is an array there is a loop" is a famous adagio. Actually,
@@ -187,7 +202,7 @@ for (let i=0; i < persons.length; i++) {
 }
 paragraph += '.';
 
-// EXERCISE 7. Loop through the properties of an object.
+// EXERCISE 9. Loop through the properties of an object.
 ////////////////////////////////////////////////////////
 
 // Looping through the properties of an object is slightly different
@@ -212,7 +227,7 @@ for (let property in obj) {
     }
 }
 
-// EXERCISE 8. Bonus. Constant objects.
+// EXERCISE 10. Bonus. Constant objects.
 ///////////////////////////////////////
 // This is weird, and it takes a lot of JavaScript to understand why it is so.
 // Constant objects are not constant. For now, just embrace it.
