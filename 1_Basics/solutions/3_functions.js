@@ -16,7 +16,7 @@ function printMyName() {
 }
 // Notice that camel case naming applies also to functions.
 // Further notice  that functions definitions are not terminated by a semicolon.
-typeof printMyName;
+console.log(typeof printMyName);
 printMyName();
 
 // EXERCISE 1. Input parameters.
@@ -124,7 +124,7 @@ function whoIsYounger(person1, person2) {
     youngest = person1.year < person2.year ? person2 : person1;
 }
 whoIsYounger(brendan, linus);
-youngest;
+console.log(youngest);
 
 // c. You can think at the scope of a variable like a set of nested
 // Russian dolls (Matryoshkas). You don't know what is
@@ -226,7 +226,7 @@ persons.sort(function(a, b) {
     if (a.year < b.year) return 1;
     return -1;
 });
-persons;
+console.log(persons);
 
 
 // Great work! You finish the third exercise sheet!

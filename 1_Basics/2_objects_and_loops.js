@@ -15,7 +15,7 @@
 
 obj = {};
 // An empty object.
-typeof obj;
+console.log(typeof obj);
 // Objects are containers for variables indexed by a key (in other programming
 // languages they may be called maps or dictionaries). They can contain
 // variables of any type inside.
@@ -24,14 +24,14 @@ typeof obj;
 
 array = [];
 // An empty array.
-typeof array;
+console.log(typeof array);
 // Arrays are containers for variables indexed by a number. They are faster
 // to iterate through than objects. Like objects, they can contain variables
 // of any type.
 
 // A special type of object, the null object.
 obj = null;
-typeof null;
+console.log(typeof null);
 // Ok, this is confusing. null is an object? In fact, in JavaScript
 // everything is an object behind the scenes, but this is an unfortunate
 // design decision for the language. You just have to live with this quirk,
@@ -82,7 +82,7 @@ typeof null;
 // number of elements in the array, then "floor" it with the corresponding
 // method of the Math object.
 // randomNumber = ... 
-persons[randomNumber];
+console.log(persons[randomNumber]);
 
 // EXERCISE 5. Add a new elements to the array of persons.
 //////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@ persons[randomNumber];
 // will add at the bottom of the array.
 
 // Verify that you added at the bottom.
-persons[3];
+console.log(persons[3]);
 
 // EXERCISE 6. Replace an element in the array of persons.
 //////////////////////////////////////////////////////////
@@ -107,7 +107,7 @@ persons[3];
 // Hint: simply assign a new value at a given array index.
 
 // Verify who is the bottom of the array.
-persons[3];
+console.log(persons[3]);
 
 // EXERCISE 7. Remove elements from the array of persons.
 //////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ persons[3];
 persons.splice(1,2);
 
 // Verify the content of the updated array.
-persons;
+console.log(persons);
 
 // EXERCISE 8. Loop through the elements of an array.
 /////////////////////////////////////////////////////

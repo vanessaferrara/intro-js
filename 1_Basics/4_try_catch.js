@@ -26,7 +26,7 @@ divideNumbers('what', {});
 
 // JavaScript makes it particularly difficult to catch these errors,
 // because of type of NaN is...guess what? 'number'! Ah, Brendan...
-typeof NaN;
+console.log(typeof NaN);
 
 // So, here is the exercise. Change the `divideNumber` function so
 // that it checks the input paramters and offer a "graceful fail"

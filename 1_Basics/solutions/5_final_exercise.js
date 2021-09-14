@@ -40,7 +40,7 @@ fibonacci(10);
 
 function recursive(number = 5, stopCondition = 0) {
     // Stopping-rule.
-    if (stopCondition === number) return stopCondition;
+    if (++stopCondition === number) return stopCondition;
     console.log('Counting...' + (stopCondition+1));
     // Self-invocation with increment of the stopping condition.
     return recursive(number, ++stopCondition);

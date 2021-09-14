@@ -14,7 +14,7 @@
 
 // Notice that camel case naming applies also to functions.
 // Further notice  that functions definitions are not terminated by a semicolon.
-typeof printMyName;
+console.log(typeof printMyName);
 printMyName();
 
 // EXERCISE 1. Input parameters.
@@ -101,7 +101,7 @@ printSentence2(brendan, linus);
 // Hint: whether you use let youngest = ... or simply youngest = ...
 // inside the function makes a big difference. Do you understand why?
 
-youngest;
+console.log(youngest);
 
 // c. You can think at the scope of a variable like a set of nested
 // Russian dolls (Matryoshkas). You don't know what is
@@ -181,7 +181,7 @@ persons = [ brendan, linus ];
 persons.sort(
     // Define a comparator function in here.
 );
-persons;
+console.log(persons);
 
 
 // Great work! You finish the third exercise sheet!
