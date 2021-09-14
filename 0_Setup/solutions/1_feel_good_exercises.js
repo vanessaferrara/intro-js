@@ -117,11 +117,11 @@ console.log("As I just said, the sum of b and c is: ", b+c);
 
 // b. Comment out useless code with Ctrl-/. Notice if you applied the
 // command multiple times, it will uncomment/comment/uncomment... it.
-// let uselessCode = 'I am useles';
+// let uselessCode = 'I am useless';
 
 // c. Cool. What other shorcuts are available? Here is a shortcut to find
-// them all. Ctrl-Shift-P. Some Look around and remember how to get here, we will
-// use it later.
+// them all. Ctrl-Shift-P. Some Look around and remember how to get here, 
+// we will use it later.
 
 
 // EXERCISE 4. Bracket Matching.
