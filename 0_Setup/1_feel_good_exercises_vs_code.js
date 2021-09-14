@@ -191,6 +191,8 @@ if (true) {
 let outcome = 'Yes, I made it!';
 console.log(outcome);
 
+edwdwede
+
 // b. Did it work? If so, try the following:
 
 console.log('I want to say it 10 times:');
