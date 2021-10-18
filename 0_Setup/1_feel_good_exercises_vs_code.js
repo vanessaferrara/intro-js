@@ -84,28 +84,13 @@ console.log(a);
 // Hint: follow the pattern.
 a = 1
 b = 2
-c = 3
+c.= 3
 
 // Hint: This function has no name following the word function.
 function(notUsed) {
     console.log('Hello!');
 }
 
-// EXERCISE 3. Productivity.
-//////////////////////////////
-// VS Code comes with snippet auto-completion. Cool! But what is a "snippet" ?
-// A snippet is simply a portion of code that you can reuse.
-// We haven't learn the syntax of JavaScript, but this is just to show off
-// some useful features of the editor.
-
-// a. Auto complete for console.log, On the next line, start typing log.
-// A popup window will show up with some suggestions. Find the right one
-// to have console.log() autocompleted for you.
-
-// b. What are all the other suggestions? They are specific JS constructs,
-// some of which you will learn in this course. Actually, only a small 
-// fraction of which you will learn about in this course. It's up to you
-// to learn the rest!
 
 // EXERCISE 4. Producticity: Shorcuts and More.
 ///////////////////////////////////////////////
