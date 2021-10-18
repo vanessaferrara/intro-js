@@ -25,8 +25,7 @@ console.log(isOdd(odd));
 // c. Now, make these lines work...
 
 // Add something here.
-var isEven = require('is-even');
-var even = 2;
+let even = 2;
 console.log(isEven(even));
 
 // EXERCISE 2. Make the one-liners.
@@ -38,19 +37,14 @@ console.log(isEven(even));
 // If you don't know why, you can read this article:
 // https://www.sciencealert.com/how-a-programmer-almost-broke-the-internet-by-deleting-11-lines-of-code
 
-// Now, I know you know how to do it, so why don't you  write down the two 
+// Now, I know you know how to do it, so why don't you write down the two 
 // one-liners that reproduce the methods isOdd and isEven used above?
-
-let isOdd = function(num) {
-    return num % 2 !== 0;
-};
+// PS: what is a one-liner? It is a line of code that achieves your goal.
 
 
-let num = 2;
-let isOdd = (num) => num % 2 !== 0;
-
-console.log('Is the number odd? ' + (isOdd(num) ? 'Yes' : 'No'));
-
+// Then test your one-liner functions here. 
+console.log('Is the number odd? '  + (isOdd(num) ? 'Yes' : 'No'));
+console.log('Is the number even? ' + (isEven(num) ? 'Yes' : 'No'));
 
 
 // EXERCISE 3. Understanding the packaging.
