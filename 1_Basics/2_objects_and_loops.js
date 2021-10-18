@@ -190,6 +190,6 @@ myObject = brendan; // it throws an error, it does not want to be brendan.
 // the content of the address, but you can't change the address,
 // which happens upon re-assignment.
 
-// Great work! You finish the second exercise sheet!
+// Great work! You finished the second exercise sheet!
 // Pat yourself on the back or ask the person to your left to do it,
 // if that is appropriate.

@@ -93,11 +93,19 @@ console.log(typeof undefined);
 
 // a. Compute (18 + 107) / (5 * 25)
 
+console.log(a);
+
 // b. Compute the square root of one million.
+
+console.log(b);
 
 // c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
 
+console.log(c);
+
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
+
+console.log(d);
 
 // Now compute:
 console.log(a*b*c*d);
@@ -132,7 +140,7 @@ console.log(luzernPopulation);
 
 // a. Generate a random number between 0 and 1, and store its value
 // in a variable (and pick a proper name for the variable!).
-// Hint. The Math object is your friend .
+// Hint. The Math object is your friend.
 
 
 // b. Update the variable so that the value of the random number is
@@ -161,7 +169,7 @@ str2 = 'Just like everyone else.';
 
 
 // b. Did you remember to add a space between them?
-// If so how many characters is the final string?
+// If so, how many characters is the final string?
 
 
 // c. Did you know that you can also join strings and numbers together?
