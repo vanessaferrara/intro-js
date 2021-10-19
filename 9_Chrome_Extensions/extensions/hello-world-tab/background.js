@@ -26,7 +26,7 @@ console.log('I am alive in the background!');
 // Ref:
 // https://developer.chrome.com/docs/extensions/reference/events/
 
-// Notice that we add the async keyword because we use wait in it.
+// Notice that we add the async keyword because we use await in it.
 chrome.runtime.onInstalled.addListener(async () => {
 
   // Let's open a new tab programmatically.

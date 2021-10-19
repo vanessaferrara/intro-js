@@ -5,7 +5,7 @@
 // Module: Chrome Extension.
 ////////////////////////////
 
-// Chrome extensions---who might guess it?---extend_ the 
+// Chrome extensions---who might guess it?---extend the 
 // functionalities of the Chrome browser.
 
 // https://developer.chrome.com/docs/extensions/
