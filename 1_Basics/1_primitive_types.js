@@ -1,87 +1,198 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
-///////////////////////////////////////////////////////////////////////////////
-// PS: I know I said the 1st exercise also in Part 0, but that does not count.
+////////////////////////////////////////////////////////////////////////////////
+// PS: I know I have the same heading also for Part 0, so this is not
+// technically the first sheet, but but Part 0 does not count.
 
 // Enough said. Let's begin with the basics of JavaScript!
-// We will start with the "primitive types.""
-// A primitive type (or simply a type) is a category af variables
-// in a language that share a set of common features.
 
-// I hope you don't get bored. If so, just continue with the exercises
-// in the next file at your own pace. You will find the solutions in the
-// folder called solutions. This time for real.
+// We will start with the "primitive types."
+
+// A primitive type (or simply a type) is a category af variables
+// that share a set of common features.
+
+// Wait! I am assuming you know what a variable is. If you are 
+// unsure here is a definition:
+
+// Variables are "labels" or "pointers" that hold some data; pretty much like
+// the x and y variables in math, but much more fun to work with :)  
+
+// Important: do not get bored!
+// Are these exercises too easy? If so, just continue with the
+// exercises in the next file at your own pace. You will find all the
+// solutions in the folder called solutions.
+
 
 // EXERCISE 0. Primitive Types.
 ///////////////////////////////
 
 // Not really an exercise, it is more a small warm up to recall the different
-// primitive types in JavaScript and to get you familiar with ATOM Hydrogen.
+// primitive types in JavaScript and to get you familiar with your text editor.
 
-// Create a variable named morph and assign a value to it for each
-// primitive type in JavaScript. The typeof operator gives the type
-// of a variable.
+// Important: Refresher about how to execute the code! 
 
-// Some operations may be allowed for a certain primitive type and raise
-// an error for another one.
+// VSCode users need the Code Runner extensions.
+// Select the portion of the code they want to run and:
+// - Press Ctrl-N
+// - Right Click: Run Code
 
-// Important! I am assuming you are using the Hydrogen package to
-// run these exercise. If so, you may avoid declarig variables with let.
-// This has the advantage that you can re-run the same command without
-// throwing errorr such as  "variable already defined",
-// This has also the disadvantage that the linter will complain about
-// the variable not being defined. Let it complain, he is a grumpy old linter.
-
-// Do you remember how to use Hydrogen? It is very easy:
+// Atom Users need the Hydrogen package.
 // - to execute the line where the cursor is, press Ctrl-Enter.
 // - to execute multiple lines at once, highlight them, and press Ctrl-Enter.
+
+// Hydrogen Atom users should avoid declaring variables with let.
+// This has the advantage that you can re-run the same command without
+// throwing errorr such as "variable already defined",
+// This has also the disadvantage that the linter (if enabled) will complain 
+// about undefined variables. Let it complain, he is a grumpy old linter.
+
+
+// Primitive types (or primitives) are the building block of any programming
+// language, and they are represented at the lowest level of its implementation.
+
+// A primitive type is piece of data that is not an object and has no methods. 
+
+// In JavaScript there are 7 primitive types: string, number, bigint, boolean,
+// undefined, symbol, and null.
+
+// Here is an example of a primitive string.
+primitive = 'I am so primitive.';
+
+// You can output the value of primitive with console.log().
+console.log(primitive);
+
+// Or slightly nicer:
+console.log('The value of the variable primitive is: ' + primitive);
+
+// We will learn more about strings concatenation later, but for now just know
+// the plus sign (+) will join two strings together.
+
+// EX. Making Progress.
+
+// Beware: primitive types are immutable! Don't even try to change them.
+// All your efforts would be in vain. So what's the Catch 22? No need to 
+// change them, simply _replace_ them.
+
+primitive = 'I am so primitive.';
+console.log(primitive);
+primitive = 'I am no longer primitive. I am making progress!'
+console.log(primitive);
+
+// Technical Note! Before I said, that primitive types are immutable, are not
+// an object. While, this is true in JavaScript primitive types are wrapped in 
+// an object before you operate with them and may have methods. More on this
+// later.
+
+// EX Be a looser.
+
+// In JavaScript, variables are loosely typed. What does it mean? 
+// It has nothing to do with keeping your fingers loose while you type.
+// It means that you are allowed to replace the content of a variable with 
+// data of different primitive type. 
+
+// Loosely typed programming language (like JavaScript or Perl) are opposed to
+// strongly typed programming (like TypeScript or Java), in which switching
+// the primitive type of a variable after assignment will throw an error.
+
+// Strongly typed programming language may gain in performance and may help
+// catching and debugging runtime errors. Loosely typed programming languages
+// are more flexible and more...loose. It's up to the programmer to be
+// disciplined and do type checking where appropriate. 
+
+
+// Fully embrace the looseness of JavaScript by creating a variable named morph
+// and by assigning a value to it for each primitive type in JavaScript. 
+
+// Use the typeof operator to print the type of a variable. 
+// Be ready for some surprises.
 
 // Numbers.
 
 // integer.
 morph = 1;
-console.log(typeof morph);
+
+console.log('Morph: ' + morph);
+console.log('Morph type is: ' + typeof morph);
 // It is good practice to always add the semicolon at the of a statement.
 
-// Floating point
+// Floating point.
 morph = 1.1;
-console.log(typeof morph);
-// Note Both floating point and integer numbers belong to the same primitive
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
+
+// Both floating point and integer numbers belong to the same primitive
 // type: 'number'. Other programming language may distinguish different
 // subtypes, such as positive-only, floating point, etc, to save space
 // in memory. However, your life is easier, they are all numbers.
 
+
 // Strings
 
 morph = 'I morphed into a string.'
-console.log(typeof morph);
-// JavaScript is dynamically (or loosely) typed. This means that
-// the type of a variable can change at run-time. Languages that are
-// statically (or strongly typed) will throw an error if you attempt to
-// change the type without calling a special conversion routine.
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
 
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
+
 morph = 'A';
-console.log(typeof morph);
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
 
 // Booleans.
+
 morph = true;
-console.log(typeof morph);
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
+
 morph = false;
-console.log(typeof morph);
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
 
 // Not much to say about booleans, right?
 
-// Undefined
-let iAmNotDefinedYet;
-console.log(typeof iAmNotDefinedYet);
-console.log(typeof undefined);
-// If something does not exist or has not yet been initialized, its type
-// is 'undefined'. We will come back with more examples to this later.
+// Undefined.
 
-// There are other two important primitive types: 'object', and 'function'.
+morph = undefined;
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
+
+// If something does not exist or has not yet been initialized, its type
+// is 'undefined'. See below.
+
+let iAmNotDefinedYet;
+
+console.log('iAmNotDefinedYet: ' + iAmNotDefinedYet);
+console.log('iAmNotDefinedYet type is now: ' + typeof iAmNotDefinedYet);
+
+// Null
+
+// There are other two important types: 'object', and 'function'.
 // We will learn more about those in the next exercises.
+
+// Less used primitives: BigInts, Symbols
+
+// Bigints represent whole numbers larger than 2^53 - 1. You probably won't 
+// use them a lot.
+
+morph = 1n;
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
+
+// Symbols are variables that guaranteed to be unique. You probably won't 
+// use them a lot.
+
+morph = Symbol('I am unique');
+
+console.log('Morph: ' + morph);
+console.log('Morph type is now: ' + typeof morph);
 
 // EXERCISE 1. Computations.
 ////////////////////////////
