@@ -8,14 +8,13 @@
 // EXERCISE 0. Definitions.
 //////////////////////////
 
-// Not really an exercise, it is more a small warm up to recall the different
-// primitive types in JavaScript and to get you familiar with ATOM Hydrogen.
+// Let's do the usual type checking with morpho for warming up.
 
 // Objects.
 
 obj = {};
 // An empty object.
-console.log(typeof obj);
+console.log('The type of objtypeof obj);
 // Objects are containers for variables indexed by a key (in other programming
 // languages they may be called maps or dictionaries). They can contain
 // variables of any type inside.

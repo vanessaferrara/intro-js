@@ -2,7 +2,6 @@
 // Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
 ////////////////////////////////////////////////////////////////////////////////
 
-
 // EXERCISE 5. String manipulation.
 ///////////////////////////////////
 
@@ -60,6 +59,11 @@ myFinalStr = 'something else';
 
 // Pat yourself on the back or ask the person to your right to do it,
 // if that is appropriate.
+
+
+// EXERCISE 6. Constants.
+/////////////////////////
+
 
 // Online version: give yourself a victory emoji, or ask a random stranger
 // Twitter 
