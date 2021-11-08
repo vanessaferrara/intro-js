@@ -2,19 +2,22 @@
 // Welcome to the 2nd exercise sheet of Programming Fundamentals in JavaScript!
 ///////////////////////////////////////////////////////////////////////////////
 
-// EXERCISE 1. Loop through the elements of an array.
-/////////////////////////////////////////////////////
 
 // "Where there is an array there is a loop" is a famous adagio. Actually,
 // I just made it up, but indeed, loops are a fundamental part of
 // evey computer language. Let's try them out.
 
-// a. Loop through the elements of the persons array and print only the year
+// EXERCISE 1. Loop through the elements of an array.
+/////////////////////////////////////////////////////
+
+// Loop through the elements of the persons array and print only the year
 // in which the persons are born.
 // Hint: use console.log to print. Use let when you define the iterating index.
 
+// EXERCISE 2. Verbose Loop.
+////////////////////////////
 
-// b. This time you want to create a short paragraph which verbosely
+// a. This time you want to create a short paragraph which verbosely
 // describes the content of the person array. The final paragraph should look
 // like this:
 // 'There are 2 elements in the array: element 1 is Brendan Eich,
@@ -24,10 +27,10 @@
 // Hint2: You will also need some if logic to correctly add or not the comma
 // between the first and the second element and finishing with a dot.
 
-// c. bonus. Can you replace the part "element 1" with "the first element" and
+// b. bonus. Can you replace the part "element 1" with "the first element" and
 // "element 2" with the "second element" and so on?
 
-// EXERCISE 2. Loop through the properties of an object.
+// EXERCISE 3. Loop through the properties of an object.
 ////////////////////////////////////////////////////////
 
 // Looping through the properties of an object is slightly different
