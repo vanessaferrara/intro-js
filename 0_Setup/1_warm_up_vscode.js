@@ -45,12 +45,12 @@ console.log(a);
 
 // Nothing happened? 
 // If so, your code (technically my code, if you just cloned it)
-//  might have some errors. VS Code is a bit picky here, and 
+// might have some errors. VS Code is a bit picky here, and 
 // does not touch code with errors. You will have to do Exercise 2 first,
 // fix the errors, and come back here. Do it, it's worthy.
 
 // b. Why is it still different from the code indented on the slide?
-// Automatic indentation simply adjustes the space on the left-hand
+// Automatic indentation simply adjusts the space on the left-hand
 // side of your code. It neither adds missing parentheses nor trims
 // white space between words. That is up to you to do it.
 // Do it, does it read better? Can you grasp what the code is doing?
@@ -143,28 +143,7 @@ if (true) {
 // in the menu of all VS Code commands. How do you open that menu? If you don't 
 // remember, go back to exercise 3.c.
 
-// EXERCISE 6. Git.
-///////////////////
-// You made good progress. It is time to look back at when you started
-// this exercise. You were a different person, and so this was a different
-// file.
-
-// a. Open the Git pane on the left (usually it is the third icon from the
-// top, it should have a blue badge with a number on it).
-
-// b. Visualize the changes in this file, and if you are happy with them
-// your chages, "stage" them, i.e., add them to the git index.
-// Note: in VS Code you may stage and commmit at once, so that is steps b.
-// and c. together.
-
-// c. Add a proper "commit" message to describe your changes. Be concise.
-
-// d. Good! Your changes are saved. If you have the permissions, you will 
-// be able to push your code online, otherwise you may have to do a 
-// "pull request". We will learn about "pull requests" later.
-// To push now look for the a push icon at the bottom-right and click it.
-
-// EXERCISE 7. Code Runner.
+// EXERCISE 6. Code Runner.
 ///////////////////////////
 // This is the final obstacle between you and beginning Part 1.
 

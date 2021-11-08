@@ -1,12 +1,6 @@
-// I lied. There are no solutions for the Part_0_Setup exercises.
-// But I don't think you really need them either.
-// From Part 1 on, you will find the solutions in the solutions folder.
-// Promised.
-
-// Update!
-// Ok, I initially wanted to lie (you can check the commit history),
-// but my students are really nice, so I felt ashemed of lying and I
-// have added the solutions below.
+/////////////////////////////////////////////////
+// Welcome to the 1st Exercise Sheet: Warm Up! //
+/////////////////////////////////////////////////
 
 // Note: this are the solutions based on the Atom's file. For VS Code
 // it's basically the same.

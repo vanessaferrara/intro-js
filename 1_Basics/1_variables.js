@@ -2,16 +2,13 @@
 // Exercise Sheet 1: Variables. //
 //////////////////////////////////
 
-// Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
+// Welcome to the 1st exercise sheet of the course!
 // PS: I know I have the same heading also for Part 0, so this is not
 // technically the first sheet, but Part 0 does not count.
 
 // Enough said. Let's begin with the basics of JavaScript!
 
 // We will start with the "primitive types."
-
-// A primitive type (or simply a type) is a category af variables
-// that share a set of common features.
 
 // Wait! I am assuming you know what a variable is. If you are 
 // unsure here is a definition:

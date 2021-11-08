@@ -155,23 +155,8 @@ if (true) {
 // Atom commands. It is also written next to the menu option you clicked 
 // for exercise 4.a.
 
-// EXERCISE 6. Git.
-///////////////////
-// You made good progress. It is time to look back at when you started
-// this exercise. You were a different person, and so this was a different
-// file.
 
-// a. Open the Git Tab on the right and visualize the changes in this file
-
-// b. If you are happy with them "stage" them, that is add them to the index.
-
-// c. Add a proper "commit" message to describe your changes. Be concise.
-
-// d. Good! Your changes are saved. If you have the permissions, you will 
-// be able to push your code online, otherwise you may have to do a 
-// "pull request". We will learn about "pull requests" later.
-
-// EXERCISE 7. Hydrogen.
+// EXERCISE 6. Hydrogen.
 ////////////////////////
 // This is the final obstacle between you and beginning Part 1.
 // You got to have Hydrogen installed and configured. Follow the instructions
