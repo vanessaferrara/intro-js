@@ -58,8 +58,11 @@ console.log(primitive);
 // Or slightly nicer:
 console.log('The value of the variable primitive is: ' + primitive);
 
-// We will learn more about strings concatenation later, but for now just know
-// the plus sign (+) will join two strings together.
+// A couple of things to note:
+// - We added semicolon (;) to terminate a line. While not necessary, this is
+//   recommended.
+// - We used the plus sign (+) to join two strings together (more on 
+//   strings later).
 
 // So what was the exercise here? This was just a small warm up about variables
 // in JavaScript and a way to get you familiar with your text editor.

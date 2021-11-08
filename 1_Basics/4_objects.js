@@ -22,15 +22,6 @@ console.log('The type of morpho is: ' + typeof morpho);
 // languages they may be called maps or dictionaries). They can contain
 // variables of any type inside.
 
-// Arrays.
-
-array = [];
-// An empty array.
-console.log(typeof array);
-// Arrays are containers for variables indexed by a number. They are faster
-// to iterate through than objects. Like objects, they can contain variables
-// of any type.
-
 // A special type of object, the null object.
 obj = null;
 console.log(typeof null);
@@ -51,7 +42,11 @@ console.log(typeof null);
 // Hint. The property name must contain the full name (Brendan Eich), and
 // the property birth must contain the year in which he was born (1961).
 
-// b. Access the properties of the person object.
+// b. Access the properties of the person object and create a sentence of the
+// type: "X was born in Y." where X is Brendan Eich and Y is 1961.
+
+// c. Bonus exercise. Instead of saying that year of birth, you could say that
+// Brendan Eich is Z years old.  
 
 
 // EXERCISE 2. Add and remove properties to the person object.
@@ -61,6 +56,34 @@ console.log(typeof null);
 // two: 'first' and 'last' name. Accordingly you delete the propery name.
 
 
+
+// EXERCISE 3. Bonus. Constant objects.
+///////////////////////////////////////
+// This is weird, and it takes a lot of JavaScript to understand why it is so.
+// Constant objects are not constant. For now, just embrace it.
+
+const myObject = {
+    a: 1,
+    b: 2
+};
+
+// Can you change the properties of constant objects? Yes.
+myObject.b = 3; // No error thrown.
+// Can you add a new property to constant objects.
+myObject.c = 4; // No error thrown.
+
+// Can you re-assign it? No!
+myObject = brendan; // it throws an error, it does not want to be brendan.
+
+// Explanation. Objects are pointers to memory addresses. You can change
+// the content of the address, but you can't change the address,
+// which happens upon re-assignment.
+
+// Great work! You finished the second exercise sheet!
+// Pat yourself on the back or ask the person to your left to do it,
+// if that is appropriate.
+
+
 // EXERCISE 3. Create an array of persons.
 //////////////////////////////////////////
 
@@ -68,25 +91,31 @@ console.log(typeof null);
 // You already have Brendan, now add another two inspiring personalities.
 // For example, Pablo Picasso and Napoleon Bonaparte. When are they born?
 
+// persons = ...
+
 // b. Count how many elements are in the array.
 
-// c. Access the second element of the array.
+// EXERCISE 4. Accessing items inside arrays.
+/////////////////////////////////////////////
 
-// Arrays are 0-indexed, that is the first element has index 0,
+// Access the second element of the array and create the same string as in exercise 2.b.
+
+// Hint: arrays are 0-indexed, that is the first element has index 0,
 // the second element 1, and so on.
 
-// d. Access the property year of the second element of the array.
-
-// EXERCISE 4. Pick a random item in the array of persons.
+// EXERCISE 5. Pick a random item in the array of persons.
 //////////////////////////////////////////////////////////
+
+// Repeat exercise 4, but this time you pick a random item from the array.
 
 // Hint. Generate a random number between 0 and the total
 // number of elements in the array, then "floor" it with the corresponding
 // method of the Math object.
+
 // randomNumber = ... 
 console.log(persons[randomNumber]);
 
-// EXERCISE 5. Add a new elements to the array of persons.
+// EXERCISE 6. Add a new elements to the array of persons.
 //////////////////////////////////////////////////////////
 
 // You just realized that Phil Katz (born 1962) also deserves to be
