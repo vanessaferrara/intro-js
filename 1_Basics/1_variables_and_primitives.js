@@ -118,14 +118,14 @@ console.log(primitive);
 morpho = 1;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is: ' + typeof morpho);
+console.log('The type of Morpho is: ' + typeof morpho);
 // It is good practice to always add the semicolon at the of a statement.
 
 // Floating point.
 morpho = 1.1;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Both floating point and integer numbers belong to the same primitive
 // type: 'number'. Other programming language may distinguish different
@@ -140,7 +140,7 @@ morpho = 'I morphed into a string.'
 // complain. Not JavaScript.
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
@@ -148,19 +148,19 @@ console.log('Morpho type is now: ' + typeof morpho);
 morpho = 'A';
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Booleans.
 
 morpho = true;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 morpho = false;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Not much to say about booleans, right?
 
@@ -169,7 +169,7 @@ console.log('Morpho type is now: ' + typeof morpho);
 morpho = undefined;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // If something does not exist or has not yet been initialized, its type
 // is 'undefined'. See below.
@@ -184,7 +184,7 @@ console.log('iAmNotDefinedYet type is now: ' + typeof iAmNotDefinedYet);
 morpho = null;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // The type of null is 'object', a non-primitive type. How confusing!
 
@@ -197,7 +197,7 @@ console.log('Morpho type is now: ' + typeof morpho);
 morpho = 1n;
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Symbols are variables that guaranteed to be unique. You probably won't 
 // use them a lot.
@@ -205,4 +205,4 @@ console.log('Morpho type is now: ' + typeof morpho);
 morpho = Symbol('I am unique');
 
 console.log('Morpho: ' + morpho);
-console.log('Morpho type is now: ' + typeof morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);

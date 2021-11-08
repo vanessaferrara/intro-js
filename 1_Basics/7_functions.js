@@ -24,14 +24,18 @@ let hello2 = function() {
 
 // Arrow Functions.
 // See also: https://javascript.info/arrow-functions-basics
-let hello3 => () {
+let hello3 = () => {
     // ... do something.
 };
 
 // JavaScript is a flexible language, but why three different ways of
 // creating a function? Why Brendan? 
+
 // First of all, Brendan Eich did not create arrow functions, they are a newer 
-// addition to the language. For the rest, continue reading.
+// addition to the language. 
+// Note also that function definitions are not terminated by a semicolon,
+// while functions expressions and arrow functions are (it is really like
+// declaring a new variable). For the rest, continue reading.
 
 // EXERCISE 1. Your First function.
 ///////////////////////////////////
@@ -39,12 +43,10 @@ let hello3 => () {
 // Create a function named printMyName that prints out your name.
 // Verify its type and invoke it.
 
-console.log(typeof printMyName);
+console.log('The type of printMyName is: ' + typeof printMyName);
 printMyName();
 
 // Notice that camel case naming applies also to functions.
-// Further notice  that functions definitions are not terminated by a semicolon.
-
 
 // EXERCISE 2. Input parameters.
 ////////////////////////////////
@@ -95,10 +97,10 @@ printSentence2(brendan, linus);
 // EXERCISE 5. Getting something back.
 //////////////////////////////////////
 
-// Printing stuff to console, is nice, but somewhat limited, right?
+// Printing stuff to console is nice but somewhat limited, right?
 // Function can do something more useful, such as returning a value with
-// the `return` statement. This gives more flexibility and allows to break
-// complex codes into subtasks.
+// the `return` statement. This gives you more flexibility and allows you to
+// break complex code into subtasks.
 
 // Create two functions. One returns the person object that is the youngest,
 // the second one prints it.
