@@ -12,9 +12,12 @@
 
 // Objects.
 
-obj = {};
+morpho = {};
 // An empty object.
-console.log('The type of objtypeof obj);
+
+console.log('Morpho: ' + morpho);
+console.log('The type of morpho is: ' + typeof morpho);
+
 // Objects are containers for variables indexed by a key (in other programming
 // languages they may be called maps or dictionaries). They can contain
 // variables of any type inside.

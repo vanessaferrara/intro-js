@@ -26,11 +26,11 @@
 // EXERCISE 0: Know Your Primitives.
 ////////////////////////////////////
 
-// Important: Refresher about how to execute the code! 
+// First a refresher about how to execute the code! 
 
-// VSCode users need the Code Runner extensions.
-// Select the portion of the code they want to run and:
-// - Press Ctrl-N
+// VSCode users need the Code Runner extension.
+// Select the portion of the code you want to run and:
+// - Press Ctrl-Alt-N, or
 // - Right Click: Run Code
 
 // Atom Users need the Hydrogen package.
@@ -49,13 +49,10 @@
 
 // A primitive type is piece of data that is not an object and has no methods. 
 
-// In JavaScript there are 7 primitive types: string, number, bigint, boolean,
-// undefined, symbol, and null.
-
-// Here is an example of a primitive string.
+// Strings (i.e., text) is an example of a primitive type.
 primitive = 'I am so primitive.';
 
-// You can output the value of primitive with console.log().
+// You can check the value of the variable named primitive with console.log().
 console.log(primitive);
 
 // Or slightly nicer:
@@ -64,8 +61,8 @@ console.log('The value of the variable primitive is: ' + primitive);
 // We will learn more about strings concatenation later, but for now just know
 // the plus sign (+) will join two strings together.
 
-// So what was the exercise? This was just a small warm up about primitive
-// types in JavaScript and a way to get you familiar with your text editor.
+// So what was the exercise here? This was just a small warm up about variables
+// in JavaScript and a way to get you familiar with your text editor.
 
 
 // EXERCISE 1. Making Progress.
@@ -91,16 +88,16 @@ console.log(primitive);
 // In JavaScript, variables are loosely typed. What does it mean? 
 // It has nothing to do with keeping your fingers loose while you type.
 // It means that you are allowed to replace the content of a variable with 
-// data of different primitive type.
+// data of a different primitive type.
 
-// Loosely typed programming language (like JavaScript or Perl) are opposed to
-// strongly typed programming (like TypeScript or Java), in which switching
-// the primitive type of a variable after assignment throws an error.
+// Loosely typed programming languages (like JavaScript or Perl) are opposed to
+// strongly typed programming languages (like TypeScript or Java), in which
+// switching the primitive type of a variable after assignment throws an error.
 
-// Strongly typed programming languages may gain in performance and may help
-// catching and debugging runtime errors. Loosely typed programming languages
+// Strongly typed programming languages may gain in performance and be
+// better for avoiding runtime errors. Loosely typed programming languages
 // are more flexible and more...loose. It's up to the programmer to be
-// disciplined and do type checking where appropriate. 
+// disciplined and do type checkings where appropriate. 
 
 
 // Now fully embrace the looseness of JavaScript by creating a variable named
@@ -108,6 +105,9 @@ console.log(primitive);
 
 // Then, use the typeof operator to print the type of a variable. Be ready for
 // some surprises.
+
+// In JavaScript there are 7 primitive types: number, string, boolean,
+// undefined, bigint, symbol, and null.
 
 // Numbers.
 
