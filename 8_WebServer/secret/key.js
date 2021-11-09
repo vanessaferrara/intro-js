@@ -1,1 +1,0 @@
-module.exports = "$2b$10$1MGYM9wRp1E3NLVBY4Ta/.7BTbzIq.Es8mP6nUS7V8e5sMQDEU196"
