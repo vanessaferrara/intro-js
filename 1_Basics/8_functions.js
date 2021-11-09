@@ -128,10 +128,6 @@ printSentence2(brendan, linus);
 // without using input parameters.
 
 
-// Certainly, this function is less general than the function with input
-// parameters, so the one with input parameters is the preferred
-// in most situations.
-
 // b. Advanced. A function can also modify/create other variables outside its
 // body, but inside its scope. Modify the whoIsYounger function so
 // that it does not return a value, but instead it stores the
