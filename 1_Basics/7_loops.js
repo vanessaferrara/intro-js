@@ -14,6 +14,15 @@
 // in which the persons are born.
 // Hint: use console.log to print. Use let when you define the iterating index.
 
+persons = [
+    { first: 'Brendan', last: 'Eich', year: 1961 },
+    { first: 'Pablo', last: 'Picasso', year: 1881 },
+    { first: 'Napoleon', last: 'Bonaparte', year: 1821 },
+    { first: 'Linus', last: 'Torvalds', year: 1962 }
+];
+
+
+
 // EXERCISE 2. Verbose Loop.
 ////////////////////////////
 
