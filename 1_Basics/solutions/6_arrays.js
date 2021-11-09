@@ -175,3 +175,14 @@ else console.log('Array is empty.');
 if (myArray.length === 0) console.log('Array is not empty.');
 else console.log('Array is empty.');
 // Saved 4 characters and two spaces. Maybe not that useful anyway.
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Great Work!
+
+// But now stop patting yourself on the back, 
+// finish all the exercises of Part 1 first!
+
+// Next, you will learn about "Loops".

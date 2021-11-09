@@ -64,3 +64,12 @@ console.log(luzernPopulation);
 
 
 // b. Generate a random number between 0 and 10.
+
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// "Numbers" are not all that matter in life. 
+// Check out "Conditionals" in the next exercise sheet.

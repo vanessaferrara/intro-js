@@ -56,5 +56,10 @@ console.log(resultOfRecursion);
 // Check out: https://lab.reaal.me/jsrobot/
 
 
-// Great work! You finish the third exercise sheet!
-// Stop patting yourself, enough.
+/////////////////////////////////////////////
+// You finished all the Basics Exercises ! //
+/////////////////////////////////////////////
+
+// Now go create something great!
+// I mean, without any graphics, or user inputs, or interfaces. But great.
+

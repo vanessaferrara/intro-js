@@ -217,6 +217,11 @@ persons.sort(
 );
 console.log(persons);
 
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
 
-// Great work! You finish the third exercise sheet!
-// Stop patting yourself on the back, finish all the exercises of Part 1 first!
+// Well Done Again. You are almost done with this the Basics exercises.
+
+// Next, you will learn about "Try and Catch".
+

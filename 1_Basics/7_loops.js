@@ -58,3 +58,11 @@ persons = [
 // Hint: in this exercise objects behave like arrays, but instead of a
 // numeric index, you use the property name.
 
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// You became a master of JS loops. Almost like Loopin' Louie. Do you know him?
+
+// Next, you will learn about "Functions".

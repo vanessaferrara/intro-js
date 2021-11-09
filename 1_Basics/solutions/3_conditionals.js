@@ -129,3 +129,10 @@ else console.log('False');
 // For more details, see:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Great work! I am impressed.
+// You may proceed to test your knowledge of "Strings".

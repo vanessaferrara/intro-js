@@ -73,3 +73,11 @@ console.log(randomNumber);
 
 randomNumber = Math.random() * 10;
 console.log(randomNumber);
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// "Numbers" are not all that matter in life. 
+// Check out "Conditionals" in the next exercise sheet.

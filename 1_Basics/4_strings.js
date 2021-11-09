@@ -119,3 +119,5 @@ myLetVariable = 'Do not re-assign me.';
 
 // Online version: give yourself a victory emoji, or ask a random stranger
 // on Twitter to send one to you. 
+
+// Next, you will learn about "Objects".

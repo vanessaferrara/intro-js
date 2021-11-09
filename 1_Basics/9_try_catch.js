@@ -72,5 +72,9 @@ judgePerson(brendan);
 judgePerson(brendan, function() { return ' impacted my life.'; });
 
 
-// Great work! You finish the fourth exercise sheet!
-// You are ready for final exercise of Part 1 first!
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Now you are ready. Go face the "Final Exercise."
+

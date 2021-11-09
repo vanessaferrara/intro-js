@@ -207,3 +207,10 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Let's step the challenges in the next sheet "Numbers".

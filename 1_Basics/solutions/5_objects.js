@@ -101,3 +101,17 @@ myObject = 'Brendan';
 // Explanation. Objects are pointers to memory addresses. You can change
 // the content of the address, but you can't change the address,
 // which happens upon re-assignment.
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// You are on one hot streak!
+
+// Pat yourself on the back or ask the person to your left to do it,
+// if that is appropriate.
+
+// Online version: add a Like to this file. Just kidding. 
+
+// Next, you will learn about "Objects".

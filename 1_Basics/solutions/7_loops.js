@@ -91,3 +91,11 @@ for (let property in obj) {
         console.log(property + ': ' + obj[property]);
     }
 }
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// You became a master of JS loops. Almost like Loopin' Louie. Do you know him?
+
+// Next, you will learn about "Functions".
