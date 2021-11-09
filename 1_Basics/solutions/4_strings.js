@@ -15,6 +15,9 @@ str2 = 'He said "Goodbye" and left.';
 // What is the difference? Can you swap the content and the type of quotes?
 // Hint: characters can be escaped by placing a backslah before them (\).
 
+str1 = 'Please don\'t do it.';
+str2 = "He said \"Goodbye\" and left.";
+
 // EXERCISE 2. Join and Count.
 //////////////////////////////
 
@@ -26,17 +29,19 @@ str2 = 'Just like everyone else.';
 // a. Join together these two strings and assign the result to a new variable
 // named finalStr.
 
+finalStr = str1 + ' ' + str2;
 
 // b. Did you remember to add a space between them?
 // If so, how many characters is the final string?
 // Hint: Use the length property.
-
+console.log('The final string is ' + finalStr.length + ' chars long');
 
 // EXERCISE 3. Joining Different Types.
 ///////////////////////////////////////
 
 str1 = "Always remember that you are absolutely unique.";
 str2 = 'Just like everyone else.';
+luzernPopulation = 82000;
 
 // Did you know that you can also join strings and numbers together?
 // Replace str2 with a new sentence that includes the total population count
@@ -46,6 +51,11 @@ str2 = 'Just like everyone else.';
 // Then, join it with str1 and update finalStr.
 // Important. The sentence must end with a dot (needed for exercise below).
 
+
+str2 = 'Just like other ' + luzernPopulation + ' persons in Luzern.';
+finalStr = str1 + ' ' + str2;
+console.log(finalStr);
+
 // EXERCISE 4. Mind the Tick.
 /////////////////////////////
 
@@ -54,6 +64,11 @@ str2 = 'Just like everyone else.';
 // the format `${myvariable}`.
 
 // Repeast exercise 3 using backticks.
+luzernPopulation = 82000;
+str1 = "Always remember that you are absolutely unique.";
+
+finalStr = `${str1} Just like ${luzernPopulation} persons in Luzern.`;
+console.log(finalStr);
 
 
 // EXERCISE 5. Such a String Manipulator.
@@ -62,19 +77,26 @@ str2 = 'Just like everyone else.';
 // If you made it until now, you may prefer a more positive message
 // in the finalStr variable that you created in exercise 3 or 4.
 
-
 // a. From the variable finalStr, extract a substring which contains only
 // the first part (i.e., the  initial content of str1).
-// Hint: Use substring and the length property.
+// Hint: Use the .substring() method and the length property.
 
+luzernPopulation = 82000;
+str1 = "Always remember that you are absolutely unique.";
+finalStr = `${str1} Just like ${luzernPopulation} persons in Luzern.`;
+
+finalStr = finalStr.substring(0, str1.length);
+console.log(finalStr);
 
 // f. Now shout it loud and make the it upper case.
 // Hint: Use the method .toUpperCase().
-
+finalStr = finalStr.toUpperCase();
+console.log(finalStr);
 
 // g. Let's be honest. An upper case sentence must end with an exclamation mark.
 // Replace the dot at the end of the sentence with an exclamation mark.
-
+finalStr = finalStr.substring(0, (finalStr.length - 1)) + '!';
+console.log(finalStr);
 
 // EXERCISE 6. Operators: const, var, let.
 //////////////////////////////////////////
@@ -91,89 +113,32 @@ str2 = 'Just like everyone else.';
 // the variable finalStr. You do not want anybody to change that string
 // ever again, so you decide it to assign it to constant.
 
+finalStr = 'ALWAYS REMEMBER THAT YOU ARE ABSOLUTELY UNIQUE!';
 const myFinalStr = finalStr;
 console.log(myFinalStr);
 
-// Now try to change it to something else.
+// b. Now try to change it to something else.
 myFinalStr = 'something else';
 
-// You should have seen error below. We will later learn that constants behave
-// differently with objects, but for now you are done, 
+// You should have seen error. We will later learn that constants behave
+// differently with objects.
 
-// b. Variables  
+// c. If you instead use let to declare a variable, that variable needs not be 
+// already declared. Raise an error by re-declaring the variable below with let. 
 
-you completed the first
-// exercise sheet!
+myLetVariable = 'Do not re-assign me.';
+let myLetVariable = 'Too late...'; 
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Well Done!
 
 // Pat yourself on the back or ask the person to your right to do it,
 // if that is appropriate.
-
-
-// EXERCISE 6. Constants.
-/////////////////////////
-
 
 // Online version: give yourself a victory emoji, or ask a random stranger
-// Twitter 
+// on Twitter to send one to you. 
 
-
-
-// EXERCISE 5. String manipulation.
-///////////////////////////////////
-
-// a. Join together these two strings and assign the result to a new variable
-// named finalStr.
-str1 = "Always remember that you are absolutely unique.";
-str2 = 'Just like everyone else.';
-finalStr = str1 + ' ' + str2;
-
-// b. Did you remember to add a space between them?
-// If so how many characters is the final string?
-finalStr.length;
-
-// c. Did you know that you can also join strings and numbers together?
-// Replace str2 with a new sentence that includes the total population count
-// of the city of Luzern that you just computed. For example:
-// "Just like other X persons in Luzern." (X to be replaced with the count)
-// Then, join it with str1 and update finalStr.
-// Important. String must end with a dot (needed for exercise below).
-str2 = 'Just like other ' + luzernPopulation + ' persons in Luzern.';
-finalStr = str1 + ' ' + str2;
-
-// d. Alternatively, you can specify strings using the backtick sign `
-// which allows for in-string variable substitution.
-finalStr = `${str1} Just like ${luzernPopulation} persons in Luzern.`;
-
-// e. If you made it until now, you may prefer a more positive message
-// in the finalStr variable. Extract a substring which contains only
-// the first part.
-// Hint: Use substring and the length property.
-finalStr = finalStr.substring(0, str1.length);
-
-// f. Now shout it loud and make the it upper case.
-// Hint: Use toUpperCase.
-finalStr = finalStr.toUpperCase();
-
-// g. Let's be honest. An upper case sentence must end with an exclamation mark.
-// Replace the dot at the end of the sentence with an exclamation mark.
-finalStr = finalStr.substring(0, (finalStr.length - 1)) + '!';
-
-
-// EXERCISE 6. Constants.
-/////////////////////////
-
-// You just unlocked a great insight with exercise 5, which is contained in
-// the variable finalStr. You do not want anybody to change that string
-// ever again, so you decide it to assign it to constant.
-const myFinalStr = finalStr;
-console.log(myFinalStr);
-
-// Now try to change it to something else.
-myFinalStr = 'something else'
-
-// You should have seen error below. We will later learn that constants behave
-// differently with objects, but for now you are done, you completed the first
-// exercise sheet!
-
-// Pat yourself on the back or ask the person to your right to do it,
-// if that is appropriate.

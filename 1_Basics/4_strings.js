@@ -37,6 +37,7 @@ str2 = 'Just like everyone else.';
 
 str1 = "Always remember that you are absolutely unique.";
 str2 = 'Just like everyone else.';
+luzernPopulation = 82000;
 
 // Did you know that you can also join strings and numbers together?
 // Replace str2 with a new sentence that includes the total population count
@@ -65,7 +66,7 @@ str2 = 'Just like everyone else.';
 
 // a. From the variable finalStr, extract a substring which contains only
 // the first part (i.e., the  initial content of str1).
-// Hint: Use substring and the length property.
+// Hint: Use the .substring() method and the length property.
 
 
 // f. Now shout it loud and make the it upper case.
@@ -87,31 +88,34 @@ str2 = 'Just like everyone else.';
 
 // However as a programmer, you often need more control.
 
-// a. You just unlocked a great insight in exercise 5, which is contained in
+// You just unlocked a great insight in exercise 5, which is contained in
 // the variable finalStr. You do not want anybody to change that string
 // ever again, so you decide it to assign it to constant.
 
-const myFinalStr = finalStr;
-console.log(myFinalStr);
+// a. Assign finalStr to a constant.
+finalStr = 'ALWAYS REMEMBER THAT YOU ARE ABSOLUTELY UNIQUE!';
 
-// Now try to change it to something else.
-myFinalStr = 'something else';
 
-// You should have seen error below. We will later learn that constants behave
-// differently with objects, but for now you are done, 
+// b. Now try to change it to something else.
 
-// b. Variables  
 
-you completed the first
-// exercise sheet!
+// You should have seen error. We will later learn that constants behave
+// differently with objects.
+
+// c. If you instead use let to declare a variable, that variable needs not be 
+// already declared. Raise an error by re-declaring the variable below with let. 
+
+myLetVariable = 'Do not re-assign me.';
+
+
+//////////////////////////////
+// You finished this sheet! //
+//////////////////////////////
+
+// Well Done!
 
 // Pat yourself on the back or ask the person to your right to do it,
 // if that is appropriate.
 
-
-// EXERCISE 6. Constants.
-/////////////////////////
-
-
 // Online version: give yourself a victory emoji, or ask a random stranger
-// Twitter 
+// on Twitter to send one to you. 
