@@ -3,7 +3,11 @@
 ////////////////////////////////
 
 // You have already learned about a few primitive types and you are ready
-// to master objects and loops now. Great!
+// to master objects. Great!
+
+// Objects are containers for variables indexed by a key (in other programming
+// languages they may be called maps or dictionaries). They can contain
+// variables of any type inside.
 
 // EXERCISE 0. Definitions.
 //////////////////////////
@@ -18,9 +22,6 @@ morpho = {};
 console.log('Morpho: ' + morpho);
 console.log('The type of morpho is: ' + typeof morpho);
 
-// Objects are containers for variables indexed by a key (in other programming
-// languages they may be called maps or dictionaries). They can contain
-// variables of any type inside.
 
 // A special type of object, the null object.
 obj = null;
@@ -73,12 +74,9 @@ myObject.b = 3; // No error thrown.
 myObject.c = 4; // No error thrown.
 
 // Can you re-assign it? No!
-myObject = brendan; // it throws an error, it does not want to be brendan.
+myObject = 'Brendan'; 
+// it throws an error, it does not want to be Brendan.
 
 // Explanation. Objects are pointers to memory addresses. You can change
 // the content of the address, but you can't change the address,
 // which happens upon re-assignment.
-
-// Great work! You finished the second exercise sheet!
-// Pat yourself on the back or ask the person to your left to do it,
-// if that is appropriate.

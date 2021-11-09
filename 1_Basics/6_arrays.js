@@ -2,8 +2,8 @@
 // Exercise Sheet 6: Arrays. //
 ///////////////////////////////
 
-// You have already learned about a few primitive types and you are ready
-// to master objects and loops now. Great!
+// Arrays are containers for variables indexed by a number. The items inside
+// can be of the same type or of mixed types. They can also be other arrays.
 
 // EXERCISE 0. Definitions.
 //////////////////////////
@@ -27,7 +27,7 @@ console.log(typeof array);
 // inspiring personalities.
 // For example, Pablo Picasso and Napoleon Bonaparte. When are they born?
 
-person1 = {
+brendan = {
     first: 'Brendan',
     last: 'Eich',
     year: 1961
@@ -41,8 +41,8 @@ person1 = {
 // EXERCISE 2. Accessing items inside arrays.
 /////////////////////////////////////////////
 
-// Access the second element of the array and create the same string as in 
-// exercise 2.b in sheet "Arrays" ('X was born in Y').
+// Access the second element of the array and create a string of the type: 
+// 'X was born in Y'.
 
 // Hint: arrays are 0-indexed, that is the first element has index 0,
 // the second element 1, and so on.
@@ -93,11 +93,9 @@ console.log(persons[3]);
 // containing the data about Picasso and Napoleon.
 // Hint: the method `splice` modifies the original array and returns the
 // removed elements.
-persons.splice(1,2);
 
 // Verify the content of the updated array.
 console.log(persons);
-
 
 // EXERCISE 7. Loose comparisons again.
 ///////////////////////////////////////
