@@ -8,7 +8,7 @@
 
 // Enough said. Let's begin with the basics of JavaScript!
 
-// We will start with the "primitive types."
+// We will start with some "primitive types."
 
 // Wait! I am assuming you know what a variable is. If you are 
 // unsure here is a definition:
@@ -22,8 +22,8 @@
 // solutions in the folder called solutions.
 
 
-// EXERCISE 0: Know Your Primitives.
-////////////////////////////////////
+// EXERCISE 0: Be Primitive.
+////////////////////////////
 
 // First a refresher about how to execute the code! 
 
@@ -63,8 +63,26 @@ console.log('The value of the variable primitive is: ' + primitive);
 // - We used the plus sign (+) to join two strings together (more on 
 //   strings later).
 
-// So what was the exercise here? This was just a small warm up about variables
-// in JavaScript and a way to get you familiar with your text editor.
+// A final remark.
+// In these exercises, we do not generally declare variables with let.
+// That is, we simply do:
+
+// a = 1;
+
+// instead of 
+
+// let a = 1;
+
+// This has the advantage that you can re-run the same command without
+// throwing errors such as "variable already defined" with the Hydrogen
+// package in Atom. Code Runner in VS Code does not have this issue.
+
+// This has also the disadvantage that the linter may complain about
+// the variable not being defined. If so, let it complain, he is a
+// grumpy old linter.
+
+// That's it. So what was the exercise? This was just a small warm up about
+// variables in JavaScript and a way to get you familiar with your text editor.
 
 
 // EXERCISE 1. Making Progress.
@@ -76,8 +94,9 @@ console.log('The value of the variable primitive is: ' + primitive);
 
 primitive = 'I am so primitive.';
 console.log(primitive);
-primitive = 'I am no longer primitive. I am making progress!'
-console.log(primitive);
+
+// Assign the new string 'I am no longer primitive. I am making progress!'
+// to primitive and print it to console.
 
 // Technical Note! Before I said that primitive types are immutable and not
 // objects. While this is true, in JavaScript primitives are often wrapped in 
@@ -109,7 +128,7 @@ console.log(primitive);
 // some surprises.
 
 // In JavaScript there are 7 primitive types: number, string, boolean,
-// undefined, bigint, symbol, and null.
+// undefined, null, bigint, and symbol.
 
 // Numbers.
 
@@ -134,53 +153,38 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Strings
 
-morpho = 'I morphed into a string.'
-// This is exact moment when a strongly typed programming language would
-// complain. Not JavaScript.
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
+// Characters
+
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
-
-morpho = 'A';
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Booleans.
 
-morpho = true;
+// False.
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
-morpho = false;
+// True.
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
-// Not much to say about booleans, right?
+// Not much to say about booleans, they are kind of booring. But useful.
 
 // Undefined.
 
-morpho = undefined;
-
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
-// If something does not exist or has not yet been initialized, its type
-// is 'undefined'. See below.
-
-let iAmNotDefinedYet;
-
-console.log('iAmNotDefinedYet: ' + iAmNotDefinedYet);
-console.log('iAmNotDefinedYet type is now: ' + typeof iAmNotDefinedYet);
-
 // Null
-
-morpho = null;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
@@ -188,12 +192,11 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 // The type of null is 'object', a non-primitive type. How confusing!
 
 
-// Less commonly used primitives: BigInts, Symbols
+// Bonus. Less commonly used primitives: BigInts, Symbols
 
 // Bigints represent whole numbers larger than 2^53 - 1. You probably won't 
 // use them a lot.
 
-morpho = 1n;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
@@ -201,7 +204,6 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 // Symbols are variables that guaranteed to be unique. You probably won't 
 // use them a lot.
 
-morpho = Symbol('I am unique');
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);

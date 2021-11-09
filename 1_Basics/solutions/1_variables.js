@@ -1,243 +1,229 @@
-////////////////////////////////////////////////////////////////////////////////
-// Welcome to the 1st exercise sheet of Programming Fundamentals in JavaScript!
-///////////////////////////////////////////////////////////////////////////////
-// PS: I know I said the 1st exercise also in Part 0, but that does not count.
+//////////////////////////////////
+// Exercise Sheet 1: Variables. //
+//////////////////////////////////
+
+// Welcome to the 1st exercise sheet of the course!
+// PS: I know I have the same heading also for Part 0, so this is not
+// technically the first sheet, but Part 0 does not count.
 
 // Enough said. Let's begin with the basics of JavaScript!
-// We will start with the "primitive types.""
-// A primitive type (or simply a type) is a category af variables
-// in a language that share a set of common features.
 
-// I hope you don't get bored. If so, just continue with the exercises
-// in the next file at your own pace. You will find the solutions in the
-// folder called solutions. This time for real.
+// We will start with some "primitive types."
 
-// EXERCISE 0. Primitive Types.
-///////////////////////////////
+// Wait! I am assuming you know what a variable is. If you are 
+// unsure here is a definition:
 
-// Not really an exercise, it is more a small warm up to recall the different
-// primitive types in JavaScript and to get you familiar with running code 
-// your editor.
+// Variables are "labels" or "pointers" that hold some data; pretty much like
+// the x and y variables in math, but much more fun to work with :)  
 
-// Create a variable named morph and assign a value to it for each
-// primitive type in JavaScript. The typeof operator gives the type
-// of a variable.
+// Important: do not get bored!
+// Are these exercises too easy? If so, just continue with the
+// exercises in the next file at your own pace. You will find all the
+// solutions in the folder called solutions.
 
-// Some operations may be allowed for a certain primitive type and raise
-// an error for another one.
 
-// Important! Here we do not declare variables with let. That is, we simply do:
-//
+// EXERCISE 0: Be Primitive.
+////////////////////////////
+
+// First a refresher about how to execute the code! 
+
+// VSCode users need the Code Runner extension.
+// Select the portion of the code you want to run and:
+// - Press Ctrl-Alt-N, or
+// - Right Click: Run Code
+
+// Atom Users need the Hydrogen package.
+// - to execute the line where the cursor is, press Ctrl-Enter.
+// - to execute multiple lines at once, highlight them, and press Ctrl-Enter.
+
+// Hydrogen Atom users should avoid declaring variables with let.
+// This has the advantage that you can re-run the same command without
+// throwing errorr such as "variable already defined",
+// This has also the disadvantage that the linter (if enabled) will complain 
+// about undefined variables. Let it complain, he is a grumpy old linter.
+
+
+// Primitive types (or primitives) are the building block of any programming
+// language, and they are represented at the lowest level of its implementation.
+
+// A primitive type is piece of data that is not an object and has no methods. 
+
+// Strings (i.e., text) is an example of a primitive type.
+primitive = 'I am so primitive.';
+
+// You can check the value of the variable named primitive with console.log().
+console.log(primitive);
+
+// Or slightly nicer:
+console.log('The value of the variable primitive is: ' + primitive);
+
+// A couple of things to note:
+// - We added semicolon (;) to terminate a line. While not necessary, this is
+//   recommended.
+// - We used the plus sign (+) to join two strings together (more on 
+//   strings later).
+
+// A final remark.
+// In these exercises, we do not generally declare variables with let.
+// That is, we simply do:
+
 // a = 1;
-//
+
 // instead of 
-//
+
 // let a = 1;
-//
+
 // This has the advantage that you can re-run the same command without
 // throwing errors such as "variable already defined" with the Hydrogen
 // package in Atom. Code Runner in VS Code does not have this issue.
-//
+
 // This has also the disadvantage that the linter may complain about
 // the variable not being defined. If so, let it complain, he is a
 // grumpy old linter.
 
-// Do you remember how to run commands? It is very easy:
-//
-// Ctrl-Enter (in Atom), or
-// Ctrl-Alt-N (in VS Code).
-//
-// To execute multiple lines at once, just highlight them all.
+// That's it. So what was the exercise? This was just a small warm up about
+// variables in JavaScript and a way to get you familiar with your text editor.
+
+
+// EXERCISE 1. Making Progress.
+///////////////////////////////
+
+// Beware: primitive types are immutable! Don't even try to change them.
+// All your efforts would be in vain. So what's the Catch 22? No need to 
+// change them, simply _replace_ them.
+
+primitive = 'I am so primitive.';
+console.log(primitive);
+
+// Assign the new string 'I am no longer primitive. I am making progress!'
+// to primitive and print it to console.
+
+primitive = 'I am no longer primitive. I am making progress!'
+console.log(primitive);
+
+// Technical Note! Before I said that primitive types are immutable and not
+// objects. While this is true, in JavaScript primitives are often wrapped in 
+// an object before you interact with them and may have methods. More on this
+// later.
+
+// EXERCISE 2. Be a Looser!
+///////////////////////////
+
+// In JavaScript, variables are loosely typed. What does it mean? 
+// It has nothing to do with keeping your fingers loose while you type.
+// It means that you are allowed to replace the content of a variable with 
+// data of a different primitive type.
+
+// Loosely typed programming languages (like JavaScript or Perl) are opposed to
+// strongly typed programming languages (like TypeScript or Java), in which
+// switching the primitive type of a variable after assignment throws an error.
+
+// Strongly typed programming languages may gain in performance and be
+// better for avoiding runtime errors. Loosely typed programming languages
+// are more flexible and more...loose. It's up to the programmer to be
+// disciplined and do type checkings where appropriate. 
+
+
+// Now fully embrace the looseness of JavaScript by creating a variable named
+// morpho and by assigning a value to it for each primitive type in JavaScript. 
+
+// Then, use the typeof operator to print the type of a variable. Be ready for
+// some surprises.
+
+// In JavaScript there are 7 primitive types: number, string, boolean,
+// undefined, null, bigint, and symbol.
 
 // Numbers.
 
 // integer.
-morph = 1;
+morpho = 1;
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is: ' + typeof morpho);
 // It is good practice to always add the semicolon at the of a statement.
 
-// What type is morph?
-console.log(typeof morph);
+// Floating point.
+morpho = 1.1;
 
-// No output (VS Code)? Try using console.log
-console.log(typeof morph);
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
-// Floating point
-morph = 1.1;
-console.log(typeof morph);
-
-// Note Both floating point and integer numbers belong to the same primitive
+// Both floating point and integer numbers belong to the same primitive
 // type: 'number'. Other programming language may distinguish different
 // subtypes, such as positive-only, floating point, etc, to save space
 // in memory. However, your life is easier, they are all numbers.
 
+
 // Strings
 
-morph = 'I morphed into a string.'
-console.log(typeof morph);
-// JavaScript is dynamically (or loosely) typed. This means that
-// the type of a variable can change at run-time. Languages that are
-// statically (or strongly typed) will throw an error if you attempt to
-// change the type without calling a special conversion routine.
+morpho = 'I morphed into a string.'
+// This is exact moment when a strongly typed programming language would
+// complain. Not JavaScript.
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
-morph = 'A';
-console.log(typeof morph);
+
+morpho = 'A';
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Booleans.
-morph = true;
-console.log(typeof morph);
-morph = false;
-console.log(typeof morph);
 
-// Not much to say about booleans, right?
+morpho = true;
 
-// Undefined
-let iAmNotDefinedYet;
-console.log(typeof iAmNotDefinedYet);
-console.log(typeof undefined);
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
+
+morpho = false;
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
+
+// Not much to say about booleans, they are kind of booring. But useful.
+
+// Undefined.
+
+morpho = undefined;
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
+
 // If something does not exist or has not yet been initialized, its type
-// is 'undefined'. We will come back with more examples to this later.
+// is 'undefined'. See below.
 
-// There are other two important primitive types: 'object', and 'function'.
-// We will learn more about those in the next exercises.
+let iAmNotDefinedYet;
 
-// EXERCISE 1. Computations.
-////////////////////////////
+console.log('iAmNotDefinedYet: ' + iAmNotDefinedYet);
+console.log('iAmNotDefinedYet type is now: ' + typeof iAmNotDefinedYet);
 
-// Perform the following computations and store the results in four
-// separate variables named a, b, c, and d.
-// Multiply these variables to obtain the size of the population
-// of the city of Luzern as reported by Wikipedia Eng. as of 03.06.2020.
-// Update. as of 09.10.2021, the population of Luzern according to Wikipedia
-// hasn't changed.
+// Null
 
-// a. Compute (18 + 107) / (5 * 25)
-a = (18 + 107) / (5 * 25);
-// b. Compute the square root of one million.
-b = Math.sqrt(1000000);
-// c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
-c = (123 % Math.pow(9, 2)) - 1;
-// d. Take the integer part of the float number 2.123456789 (need to use Math).
-d = Math.floor(2.123456789);
+morpho = null;
 
-console.log(a*b*c*d);
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
-// EXERCISE 2. Variable Naming.
-///////////////////////////////
-
-// Assign the value of the previous computation to variable with a proper name.
-
-// Long Hint. It is really important to name variables with meaningful names.
-// I mean, not meaningful for you, such as the name of your best friend
-// or of your dog, but meaningful with respect to the context of
-// the computer program in which they are executed.
-//
-// For instance, you could name the variable in this exercise:
-// the_population_of_Luzern_according_to_Wikipedia
-// However, that would be impractically long. A better name would be:
-// Luzern_Population
-//
-// However, you can do even better. In fact, every programming language
-// has fixed conventions for variable naming. In JavaScript, variables
-// should begin with a lower case letter and any following word should be
-// merged in a "camel case" manner. That is: without seperating characters
-// and with a upper case for the first letter of every next word. So:
-// luzernPopulation
-// is probably a good candidate. But the final choice is yours!
-luzernPopulation = a*b*c*d;
-console.log(luzernPopulation);
-
-// EXERCISE 3. Random numbers.
-//////////////////////////////
-
-// a. Generate a random number between 0 and 1, and store its value
-// in a variable (and pick a proper name for the variable!).
-// Hint. The Math object is your friend .
-randomNumber = Math.random();
-console.log(randomNumber);
-
-// b. Update the variable so that the value of the random number is
-// between 0 and the one hundred thoudands.
-randomNumber*= 100000;
-console.log(randomNumber);
-
-// EXERCISE 4. Conditionals.
-////////////////////////////
-
-// A small intro to conditionals, more on this later.
-// Write a short code statement that compares the size of the population
-// in Luzern computed in Exercise 1 with the random number you generated
-// in Exercise 3. If the random number is larger than the population of
-// Luzern print "Go Luzern!", if exactly equal print "Are we in the Matrix?",
-// otherwise print "Few but good!"
-// Hint: Use console.log to print.
-if (luzernPopulation > randomNumber) {
-    console.log('Go Luzern!');
-}
-else if (luzernPopulation === randomNumber) {
-    console.log('Are we in the Matrix?');
-}
-else {
-    console.log('Few but good!')
-}
-
-// EXERCISE 5. String manipulation.
-///////////////////////////////////
-
-// a. Join together these two strings and assign the result to a new variable
-// named finalStr.
-str1 = "Always remember that you are absolutely unique.";
-str2 = 'Just like everyone else.';
-finalStr = str1 + ' ' + str2;
-
-// b. Did you remember to add a space between them?
-// If so how many characters is the final string?
-finalStr.length;
-
-// c. Did you know that you can also join strings and numbers together?
-// Replace str2 with a new sentence that includes the total population count
-// of the city of Luzern that you just computed. For example:
-// "Just like other X persons in Luzern." (X to be replaced with the count)
-// Then, join it with str1 and update finalStr.
-// Important. String must end with a dot (needed for exercise below).
-str2 = 'Just like other ' + luzernPopulation + ' persons in Luzern.';
-finalStr = str1 + ' ' + str2;
-
-// d. Alternatively, you can specify strings using the backtick sign `
-// which allows for in-string variable substitution.
-finalStr = `${str1} Just like ${luzernPopulation} persons in Luzern.`;
-
-// e. If you made it until now, you may prefer a more positive message
-// in the finalStr variable. Extract a substring which contains only
-// the first part.
-// Hint: Use substring and the length property.
-finalStr = finalStr.substring(0, str1.length);
-
-// f. Now shout it loud and make the it upper case.
-// Hint: Use toUpperCase.
-finalStr = finalStr.toUpperCase();
-
-// g. Let's be honest. An upper case sentence must end with an exclamation mark.
-// Replace the dot at the end of the sentence with an exclamation mark.
-finalStr = finalStr.substring(0, (finalStr.length - 1)) + '!';
+// The type of null is 'object', a non-primitive type. How confusing!
 
 
-// EXERCISE 6. Constants.
-/////////////////////////
+// Less commonly used primitives: BigInts, Symbols
 
-// You just unlocked a great insight with exercise 5, which is contained in
-// the variable finalStr. You do not want anybody to change that string
-// ever again, so you decide it to assign it to constant.
-const myFinalStr = finalStr;
-console.log(myFinalStr);
+// Bigints represent whole numbers larger than 2^53 - 1. You probably won't 
+// use them a lot.
 
-// Now try to change it to something else.
-myFinalStr = 'something else'
+morpho = 1n;
 
-// You should have seen error below. We will later learn that constants behave
-// differently with objects, but for now you are done, you completed the first
-// exercise sheet!
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);
 
-// Pat yourself on the back or ask the person to your right to do it,
-// if that is appropriate.
+// Symbols are variables that guaranteed to be unique. You probably won't 
+// use them a lot.
+
+morpho = Symbol('I am unique');
+
+console.log('Morpho: ' + morpho);
+console.log('The type of Morpho is now: ' + typeof morpho);

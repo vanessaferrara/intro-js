@@ -9,22 +9,26 @@
 // separate variables named a, b, c, and d.
 // Multiply these variables to obtain the size of the population
 // of the city of Luzern as reported by Wikipedia Eng. as of 03.06.2020.
-// Update 11.07.2021 Population in Luzern did not change according to Wikipedia.
+// Update 11.07.2021: The population of Luzern did not change in Wikipedia,
+// great I don't need to update the exercise!
 
 // a. Compute (18 + 107) / (5 * 25)
 
+a = (18 + 107) / (5 * 25);
 console.log(a);
 
 // b. Compute the square root of one million.
 
+b = Math.sqrt(1000000);
 console.log(b);
 
 // c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
-
+c = (123 % Math.pow(9, 2)) - 1;
 console.log(c);
 
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
 
+d = Math.floor(2.123456789);
 console.log(d);
 
 // Now compute:
@@ -62,5 +66,10 @@ console.log(luzernPopulation);
 // in a variable (and pick a proper name for the variable!).
 // Hint. The Math object is your friend.
 
+randomNumber = Math.random();
+console.log(randomNumber);
 
 // b. Generate a random number between 0 and 10.
+
+randomNumber = Math.random() * 10;
+console.log(randomNumber);

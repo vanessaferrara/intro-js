@@ -98,7 +98,6 @@ persons.splice(1,2);
 // Verify the content of the updated array.
 console.log(persons);
 
-
 // EXERCISE 7. Loose comparisons again.
 ///////////////////////////////////////
 
@@ -107,3 +106,10 @@ console.log(persons);
 // Hint: in loose type comparisons 0 == false.
 
 myArray = [];
+if (myArray.length) console.log('Array is not empty.');
+else console.log('Array is empty.');
+
+// Instead of.
+if (myArray.length === 0) console.log('Array is not empty.');
+else console.log('Array is empty.');
+// Saved 4 characters and two spaces. Maybe not that useful anyway.

@@ -68,9 +68,6 @@ printMyName();
 // printSentence(personObject);
 // 'Brendan Eich is born is 1961 and he is great!'.
 
-// Hint: variables do not transfer magically across files, that is why you
-// need to recreate the brendan person object here.
-
 function printSentence(person) {
     // Add code here.
 }
