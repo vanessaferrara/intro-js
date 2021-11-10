@@ -22,7 +22,7 @@ else {
 }
 console.log(a);
 
-// b. Why is it still different from the code indented on the slide?
+// b. Why is it still different from the code indented on the slide (Atom only)?
 // Automatic indentation simply adjustes the space on the left-hand
 // side of your code. It neither adds missing parentheses nor trims
 // white space between words. That is up to you to do it.
@@ -32,6 +32,13 @@ console.log(a);
 // a is greater than 123, if so, it reduces its value by one unit, else it
 // increases by one unit. In the end it prints out the value of variable a.
 // In this case a is greater than 123, so the value printed is...(you say it!).
+
+// c. Gossip. Another important (futile) debate among programmers is whether
+// spaces or tabs should be used for indentation. Check out this video to
+// understand how important spaces (tabs) are:
+// https://www.youtube.com/watch?v=SsoOG6ZeyUI
+// Or read more here:
+// https://thenewstack.io/spaces-vs-tabs-a-20-year-debate-and-now-this-what-the-hell-is-wrong-with-go/
 
 
 // EXERCISE 2 Linting.
@@ -122,7 +129,8 @@ console.log("As I just said, the sum of b and c is: ", b+c);
 // the word "not". Then press Ctrl-D as many times as needed to highlight
 // all the next occurrences of the word "not". At every word "not" there is
 // a new cursor, so you can write multiple rows at once. Delete the word "not"
-// and replace the explanation mark with a sad face.
+// and replace the explanation mark with a sad face.  Press Esc to eliminate
+// multiple cursors.
 
 catchMeIfYouCan1 = 'You did catch me :(';
 catchMeIfYouCan2 = 'You did catch me :(';

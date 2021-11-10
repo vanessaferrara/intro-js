@@ -35,13 +35,13 @@
 // On Mac : Shift + Option + F
 // On Linux : Ctrl + Shift + I
 
-let a = 1234;
-a++;
-if (a > 123) {
+    let a=              1234    ;
+    a++;
+                    if (  a > 123 ) {
     a--;
-}
-else a++
-console.log(a);
+            }
+                                                else a++
+            console.log(a);
 
 // Nothing happened? 
 // If so, your code (technically my code, if you just cloned it)
@@ -49,11 +49,19 @@ console.log(a);
 // does not touch code with errors. You will have to do Exercise 2 first,
 // fix the errors, and come back here. Do it, it's worthy.
 
-// b. Why is it still different from the code indented on the slide?
+// b. Assuming auto-indent worked, is that code perfect now?
 // Automatic indentation simply adjusts the space on the left-hand
-// side of your code. It neither adds missing parentheses nor trims
-// white space between words. That is up to you to do it.
-// Do it, does it read better? Can you grasp what the code is doing?
+// side of your code. For instance, it did not add missing parentheses
+// after the kewyword "else". That is up to you to do it.
+// Can you grasp what the code is doing? If not, don't worry you
+// will learn it in this course.
+
+// c. Gossip. Another important (futile) debate among programmers is whether
+// spaces or tabs should be used for indentation. Check out this video to
+// understand how important spaces (tabs) are:
+// https://www.youtube.com/watch?v=SsoOG6ZeyUI
+// Or read more here:
+// https://thenewstack.io/spaces-vs-tabs-a-20-year-debate-and-now-this-what-the-hell-is-wrong-with-go/
 
 
 // EXERCISE 2 Linting.
@@ -92,7 +100,7 @@ function(notUsed) {
 }
 
 
-// EXERCISE 4. Producticity: Shorcuts and More.
+// EXERCISE 3. Producticity: Shorcuts and More.
 ///////////////////////////////////////////////
 // Proficient programmers use the mouse as little as possible, and try
 // to do everything with the keyboard. It is actually possible to code
@@ -112,14 +120,15 @@ uselessCode = 'I am useless';
 // the word "not". Then press Ctrl-D as many times as needed to highlight
 // all the next occurrences of the word "not". At every word "not" there is
 // a new cursor, so you can write multiple rows at once. Delete the word "not"
-// and replace the explanation mark with a sad face.
+// and replace the explanation mark with a sad face. Press Esc to eliminate
+// multiple cursors.
 
 catchMeIfYouCan1 = 'You did not catch me!';
 catchMeIfYouCan2 = 'You did not catch me!';
 catchMeIfYouCan3 = 'You did not catch me!';
 
 
-// EXERCISE 5. Bracket Matching.
+// EXERCISE 5. Bracket Matching. (Yes I know we skipped Ex. 4)
 ////////////////////////////////
 // JavaScript wraps blocks of codes in curly brackets: { SOME CODE }.
 //
@@ -141,11 +150,13 @@ if (true) {
 // b. That was easy. In more complicated cases, you might want to use a
 // keyboard shortcut. Yes, but which one? You can search for "Go to bracket"
 // in the menu of all VS Code commands. How do you open that menu? If you don't 
-// remember, go back to exercise 3.c.
+// remember, go back to exercise 3.d.
+
+// c. Make sure to have the extension Rainbow Brackets installed for extra help.
 
 // EXERCISE 6. Code Runner.
 ///////////////////////////
-// This is the final obstacle between you and beginning Part 1.
+// This is the final obstacle.
 
 // You got to have the Code Runner extension installed. 
 // If you haven't done it yet, what are you waiting for then? 

@@ -125,7 +125,8 @@ let uselessCode = 'I am useless';
 // the word "not". Then press Ctrl-D as many times as needed to highlight
 // all the next occurrences of the word "not". At every word "not" there is
 // a new cursor, so you can write multiple rows at once. Delete the word "not"
-// and replace the explanation mark with a sad face.
+// and replace the explanation mark with a sad face. Press Esc to eliminate
+// multiple cursors.
 
 catchMeIfYouCan1 = 'You did not catch me!';
 catchMeIfYouCan2 = 'You did not catch me!';
@@ -158,7 +159,7 @@ if (true) {
 
 // EXERCISE 6. Hydrogen.
 ////////////////////////
-// This is the final obstacle between you and beginning Part 1.
+// This is the final obstacle.
 // You got to have Hydrogen installed and configured. Follow the instructions
 // on the slides and then come back here.
 
